@@ -4,6 +4,7 @@ import { survivors, type Survivor } from '../data/survivors';
 import { corrections, itemWiki, uncertainItems, wiki } from '../data/references';
 import { itemRarity } from '../data/rarities';
 import AbilityPanel from '../components/AbilityPanel';
+import EditableTierGuide from '../components/EditableTierGuide';
 import { survivorLoadouts } from '../data/abilities';
 export default function SurvivorPage({ survivor: s }: { survivor: Survivor }) {
   const loadout = survivorLoadouts[s.id];
@@ -131,13 +132,17 @@ export default function SurvivorPage({ survivor: s }: { survivor: Survivor }) {
       {s.tierImage && loadout && (
         <section
           id="tier-guide"
-          className="available-tier-guide tier-guide-with-abilities"
+          className={`available-tier-guide tier-guide-with-abilities${s.id === 'drifter' ? ' compact-tier-section' : ''}`}
           aria-label={`${s.name} tier guide and abilities`}
         >
           <p className="eyebrow">AVAILABLE TIER GUIDE</p>
           <h2>{s.name} tier guide</h2>
           <div className="tier-guide-layout">
-            <ImageViewer src={s.tierImage} name={`${s.name} tier guide`} />
+            {s.id === 'drifter' ? (
+              <EditableTierGuide source={s.tierImage} />
+            ) : (
+              <ImageViewer src={s.tierImage} name={`${s.name} tier guide`} />
+            )}
             <AbilityPanel key={s.id} survivorName={s.name} loadout={loadout} />
           </div>
         </section>

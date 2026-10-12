@@ -1,4 +1,4 @@
-# ROR2 Build Atlas
+﻿# ROR2 Build Atlas
 
 An unofficial, responsive Risk of Rain 2 infographic collection built with Vite, React, and TypeScript. Includes all 20 supplied survivor guides, DLC and playstyle filters, survivor/item search, shareable detail views, full-resolution zoom, tier indexes for every supplied survivor, wiki links, and partial portal references. No backend or paid service is required.
 
@@ -116,6 +116,7 @@ ESLint uses the [recommended typescript-eslint configuration](https://typescript
 ## Where to edit
 
 - Add or update a survivor and its item tiers in `src/data/survivors.ts`.
+- Edit Drifter's live HTML tier guide in `src/data/drifter-guide.json` (names, badges, descriptions, row headings, and legend). Its field-note index and search items follow this file automatically.
 - Add survivor artwork to `assets/survivors/<id>.png`; use the same filename in `assets/tier-guides/` for an optional guide. Both display separately on the survivor page.
 - Add a PNG to `assets/maps/` to include it on the main page automatically.
 - Edit portal routes in `src/data/portals.ts`; edit source URLs and corrections in `src/data/references.ts`.
@@ -135,6 +136,8 @@ Each generated guide has editable arrays in `src/data/tier-guides/<id>.json`. Th
 ## Accuracy and sources
 
 ### Survivor abilities
+
+Drifter's tier guide is now editable HTML rather than flattened image text. All 16 item cards preserve the approved sketch's names, rarity labels, ratio badges, descriptions, and number legend. Four-column desktop rows become two-column rows on phones. Item cards use locally bundled game icons from a documented wiki-sourced mirror; the header remains AI-generated. Numbers and text are editable separately. The original PNG remains available under **Inspect original infographic**. Other survivors retain their image guides. See [editing instructions](docs/editable-tier-guide.md).
 
 All 20 survivors have a companion abilities panel beside their tier guide. On desktop it follows scrolling within its guide section; on smaller screens it stacks below the image. Role labels and short summaries make the skills easy to scan. Selectors show common alternate skills; MUL-T has two weapon selections, Captain has two beacon selections, and Void Fiend has a form selector that updates all four transformed skills together. Navigating to another survivor loads that survivor's panel and resets selections.
 

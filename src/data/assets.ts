@@ -1,4 +1,4 @@
-const images = import.meta.glob('../../assets/**/*.png', {
+const images = import.meta.glob('../../assets/**/*.{png,webp}', {
   eager: true,
   query: '?url',
   import: 'default',

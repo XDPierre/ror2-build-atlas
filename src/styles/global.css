@@ -1239,6 +1239,401 @@ summary small {
 .available-tier-guide h2 {
   font-size: 32px;
 }
+.compact-tier-section > .eyebrow {
+  margin: 0 0 4px;
+}
+.compact-tier-section > h2 {
+  margin: 0 0 10px;
+  font-size: 26px;
+}
+.editable-guide {
+  min-width: 0;
+  border: 1px solid #267d91;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #050d15;
+}
+.editable-guide-header {
+  position: relative;
+  isolation: isolate;
+  min-height: 64px;
+  padding: 7px 12px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 2px solid #33dfff;
+}
+.editable-guide-hero {
+  position: absolute;
+  z-index: -2;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 70%;
+}
+.editable-guide-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, #050d15 10%, #050d15e8 40%, #050d1533);
+}
+.editable-guide-header h3 {
+  margin: 0;
+  font-size: 30px;
+  color: #bdf6ff;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.editable-guide-header p {
+  max-width: 55ch;
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 1.3;
+}
+.editable-guide-header .editable-guide-subtitle {
+  color: #ffe785;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.editable-guide-row {
+  padding: 5px 7px;
+  border-top: 2px solid var(--row-color);
+}
+.editable-guide-row > header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+  color: var(--row-color);
+}
+.editable-guide-row h3 {
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.editable-guide-row > header p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.3;
+}
+.editable-guide-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 5px;
+}
+.editable-guide-item {
+  min-width: 0;
+  border: 2px solid var(--rarity-color);
+  border-radius: 6px;
+  background: linear-gradient(#091a25, #050910);
+  text-align: center;
+  overflow: hidden;
+}
+.editable-guide-icon {
+  position: relative;
+  height: 72px;
+  background: #030b12;
+  border-bottom: 1px solid var(--rarity-color);
+}
+.editable-guide-icon svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.editable-guide-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 2px;
+}
+.editable-guide-rarity {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  color: var(--rarity-color);
+  font-size: 9px;
+  line-height: 1.4;
+  font-weight: 700;
+  background: #050d15e8;
+  padding: 2px 3px;
+  border-radius: 3px;
+}
+.editable-guide-ratio {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  display: grid;
+  color: #fff;
+  background: #07142b;
+  border: 1px solid #bdf6ff;
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 17px;
+  line-height: 1.1;
+  font-weight: 800;
+  box-shadow: 0 0 8px #33dfff44;
+}
+.editable-guide-ratio small {
+  font-size: 8px;
+  text-transform: uppercase;
+}
+.editable-guide-item h4 {
+  font-family: inherit;
+  margin: 3px 4px 1px;
+  font-size: 11px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.editable-guide-item h4 a {
+  color: #ffe785;
+}
+.editable-guide-item p {
+  margin: 0 5px 5px;
+  font-size: 11px;
+  line-height: 1.2;
+  color: #e1edf3;
+}
+.editable-guide-legend {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.8fr);
+  gap: 12px;
+  align-items: center;
+  margin: 5px 7px;
+  padding: 6px 8px;
+  border: 1px solid #33dfff;
+  border-radius: 6px;
+}
+.editable-guide-legend h3 {
+  color: #33dfff;
+  text-transform: uppercase;
+  font-size: 19px;
+  line-height: 1.1;
+  margin: 0 0 6px;
+}
+.editable-guide-legend-copy {
+  min-width: 0;
+  border-left: 1px solid #267d91;
+  padding-left: 10px;
+}
+.editable-guide-legend ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.editable-guide-legend li,
+.editable-guide-legend p {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.35;
+}
+.editable-guide-legend strong {
+  color: #ffe785;
+}
+.editable-guide-legend .editable-guide-disclaimer {
+  color: #33dfff;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+@media (min-width: 1100px) {
+  .compact-tier-section {
+    /* Offset the global 95px anchor padding for this compact reference. */
+    scroll-margin-top: -71px;
+  }
+  .compact-tier-section .tier-guide-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .compact-tier-section .ability-panel {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    padding: 14px;
+  }
+  .compact-tier-section .ability-panel > .eyebrow {
+    margin: 0 0 6px;
+  }
+  .compact-tier-section .ability-panel h2 {
+    margin: 0 0 6px;
+    font-size: 26px;
+  }
+  .compact-tier-section .ability-context {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .compact-tier-section .ability-slots {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .compact-tier-section .ability-card:first-child {
+    grid-column: 1 / -1;
+  }
+  .compact-tier-section .ability-card {
+    padding: 10px;
+    min-width: 0;
+  }
+  .compact-tier-section .ability-card h3 {
+    font-size: 20px;
+  }
+  .compact-tier-section .ability-card p {
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .compact-tier-section .ability-card .ability-role {
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .compact-tier-section .ability-card select {
+    min-height: 36px;
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+  .compact-tier-section .ability-cooldown {
+    margin-top: 5px;
+    font-size: 11px;
+  }
+  .compact-tier-section .ability-source {
+    margin-top: 10px;
+    font-size: 11px;
+    line-height: 1.4;
+  }
+  .compact-tier-section .editable-guide-icon {
+    height: clamp(44px, 7dvh, 64px);
+    overflow: hidden;
+  }
+  .compact-tier-section .editable-guide-icon img {
+    width: 64px;
+    max-width: 60%;
+    margin-inline: auto;
+  }
+  .compact-tier-section .editable-guide-rarity {
+    font-size: 8px;
+    padding: 1px 2px;
+  }
+  .compact-tier-section .editable-guide-ratio {
+    font-size: 14px;
+    padding: 2px 3px;
+  }
+  .compact-tier-section .editable-guide-ratio small {
+    font-size: 6px;
+  }
+  .compact-tier-section .editable-guide-row > header {
+    gap: 3px 7px;
+  }
+  .compact-tier-section .editable-guide-row > header p {
+    font-size: 10px;
+  }
+  .compact-tier-section .editable-guide-item h4,
+  .compact-tier-section .editable-guide-item p {
+    font-size: 10px;
+    line-height: 1.15;
+  }
+  .compact-tier-section .editable-guide-row h3 {
+    font-size: 18px;
+  }
+  .compact-tier-section .editable-guide-legend {
+    gap: 8px;
+    padding: 5px;
+  }
+  .compact-tier-section .editable-guide-legend h3 {
+    font-size: 15px;
+  }
+  .compact-tier-section .editable-guide-legend li,
+  .compact-tier-section .editable-guide-legend p {
+    font-size: 9px;
+  }
+}
+@media (min-width: 1100px) and (max-height: 850px) {
+  .compact-tier-section > .eyebrow {
+    display: none;
+  }
+  .compact-tier-section > h2 {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+  .compact-tier-section .editable-guide-icon {
+    height: 48px;
+  }
+  .compact-tier-section .editable-guide-row {
+    padding-block: 3px;
+  }
+  .compact-tier-section .editable-guide-header {
+    min-height: 48px;
+  }
+  .compact-tier-section .editable-guide-header > div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2px 12px;
+    align-items: center;
+  }
+  .compact-tier-section .editable-guide-header h3 {
+    grid-row: span 2;
+    font-size: 24px;
+  }
+  .compact-tier-section .editable-guide-header p {
+    margin: 0;
+  }
+}
+@media (min-width: 1100px) and (max-height: 760px) {
+  .compact-tier-section .editable-guide-icon {
+    height: 36px;
+  }
+  .compact-tier-section .editable-guide-row {
+    padding-block: 2px;
+  }
+  .compact-tier-section .ability-panel {
+    padding: 10px;
+  }
+  .compact-tier-section .ability-card {
+    padding: 8px;
+  }
+  .compact-tier-section .ability-card p {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+  .compact-tier-section .ability-slots {
+    gap: 6px;
+    margin-top: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .editable-guide-legend {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .editable-guide-legend-copy {
+    border-left: 0;
+    padding-left: 0;
+  }
+  .editable-guide-legend li,
+  .editable-guide-legend-copy p {
+    font-size: 11px;
+  }
+  .editable-guide-icon {
+    height: 64px;
+  }
+  .editable-guide-items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .editable-guide-item h4,
+  .editable-guide-item p {
+    font-size: 14px;
+  }
+}
 .tier-guide-with-abilities {
   margin-top: 48px;
 }

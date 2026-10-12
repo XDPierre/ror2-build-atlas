@@ -1,0 +1,127 @@
+{
+  "title": "Drifter",
+  "subtitle": "Stack planning / Proposed ratios",
+  "intro": "Melee hits generate Junk. Salvage turns Junk into temporary items.",
+  "rows": [
+    {
+      "title": "Core Items",
+      "summary": "Proposed core priorities for melee and Junk.",
+      "color": "#ffd65a",
+      "items": [
+        {
+          "name": "Collector's Compulsion",
+          "badge": "1%",
+          "description": "Pickup buffs; buff limit grows with item copies."
+        },
+        {
+          "name": "Soldier's Syringe",
+          "badge": "5%",
+          "description": "Faster melee attacks."
+        },
+        {
+          "name": "Focus Crystal",
+          "badge": "3%",
+          "description": "More damage to nearby enemies."
+        },
+        {
+          "name": "Kjaro's Band",
+          "badge": "1%",
+          "description": "Heavy skill hits trigger flame bursts."
+        }
+      ]
+    },
+    {
+      "title": "Best",
+      "summary": "Strong damage and mobility support.",
+      "color": "#33dfff",
+      "items": [
+        {
+          "name": "Runald's Band",
+          "badge": "1%",
+          "description": "Heavy skill hits trigger ice bursts."
+        },
+        {
+          "name": "Paul's Goat Hoof",
+          "badge": "3%",
+          "description": "Movement speed for positioning."
+        },
+        {
+          "name": "Hopoo Feather",
+          "badge": "1%",
+          "description": "Extra jump for safer movement."
+        },
+        {
+          "name": "AtG Missile Mk. 1",
+          "badge": "2%",
+          "description": "Chance for missiles on hits."
+        }
+      ]
+    },
+    {
+      "title": "Okay",
+      "summary": "Useful support; value depends on the run.",
+      "color": "#f077ff",
+      "items": [
+        {
+          "name": "Lens-Maker's Glasses",
+          "badge": "10",
+          "badgeLabel": "Crit target",
+          "description": "Aim for 100% total crit. 10 copies without other crit bonuses; fewer with other sources."
+        },
+        {
+          "name": "Tougher Times",
+          "badge": "2%",
+          "description": "Chance to block damage."
+        },
+        {
+          "name": "Backup Magazine",
+          "badge": "1%",
+          "description": "Extra secondary charge."
+        },
+        {
+          "name": "Regenerating Scrap",
+          "badge": "1%",
+          "description": "Held scrap grants regen. SotV DLC."
+        }
+      ]
+    },
+    {
+      "title": "Not Good",
+      "summary": "Lower priority for this build; useful in other situations.",
+      "color": "#ff7777",
+      "items": [
+        {
+          "name": "Bustling Fungus",
+          "badge": "0%",
+          "description": "Stationary healing limits mobility."
+        },
+        {
+          "name": "Squid Polyp",
+          "badge": "0%",
+          "description": "Interactable-triggered turret."
+        },
+        {
+          "name": "Bison Steak",
+          "badge": "0%",
+          "description": "Small flat health increase."
+        },
+        {
+          "name": "Warbanner",
+          "badge": "0%",
+          "description": "Speed buffs in a fixed area."
+        }
+      ]
+    }
+  ],
+  "legend": [
+    { "label": "%", "text": "Relative stack weight, NOT an in-game percentage." },
+    { "label": "1% : 5%", "text": "1 copy : 5 copies. Scale the ratio as your run grows." },
+    { "label": "Plain number", "text": "Fixed target; Glasses: stop at 100% total crit." },
+    { "label": "0%", "text": "Do not actively target; still usable if found." }
+  ],
+  "notes": [
+    "Ratios are illustrative, not tested optimal quantities.",
+    "Tile color = game rarity | Rows = build priority"
+  ],
+  "footer": "Unofficial fan guide | Wiki icons / AI header | Design sketch"
+}
