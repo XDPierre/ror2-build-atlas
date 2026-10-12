@@ -6,7 +6,7 @@ export const dlcs = [
   'Alloyed Collective',
   'Hallowed Concepts',
 ] as const;
-export type Tier = 'Optimal' | 'Best' | 'Okay' | 'Not Good';
+export type Tier = 'Core Items' | 'Best' | 'Okay' | 'Not Good';
 export type Survivor = {
   id: string;
   name: string;
@@ -25,7 +25,7 @@ const rows: [string, string, number, string, string[], string[]][] = [
     0,
     'On-hit / Bleed',
     ['Ranged', 'On-hit'],
-    ['Tri-Tip Dagger', 'Soldier’s Syringe', 'AtG Missile Mk. 1', 'Ukulele', 'Lens-Maker’s Glasses'],
+    ['Tri-Tip Dagger', "Soldier's Syringe", 'AtG Missile Mk. 1', 'Ukulele'],
   ],
   [
     'huntress',
@@ -33,7 +33,7 @@ const rows: [string, string, number, string, string[], string[]][] = [
     0,
     'Crit / On-hit',
     ['Ranged', 'On-hit', 'Mobility'],
-    ['Lens-Maker’s Glasses', 'Soldier’s Syringe', 'Ukulele', 'AtG Missile Mk. 1', 'Hopoo Feather'],
+    ["Lens-Maker's Glasses", "Soldier's Syringe", 'Predatory Instincts', 'AtG Missile Mk. 1'],
   ],
   [
     'bandit',
@@ -41,7 +41,7 @@ const rows: [string, string, number, string, string[], string[]][] = [
     0,
     'Burst / Backstab',
     ['Ranged', 'Burst'],
-    ['Crowbar', 'Runald’s Band', 'Kjaro’s Band', 'Shatterspleen', 'Backup Magazine'],
+    ['Crowbar', "Runald's Band", "Kjaro's Band", 'Shatterspleen'],
   ],
   [
     'mul-t',
@@ -49,7 +49,7 @@ const rows: [string, string, number, string, string[], string[]][] = [
     0,
     'Nailgun / On-hit',
     ['Ranged', 'On-hit'],
-    ['Soldier’s Syringe', 'Tri-Tip Dagger', 'AtG Missile Mk. 1', 'Ukulele', 'Plasma Shrimp'],
+    ["Soldier's Syringe", 'Tri-Tip Dagger', 'AtG Missile Mk. 1', 'Ukulele'],
   ],
   [
     'engineer',
@@ -57,7 +57,7 @@ const rows: [string, string, number, string, string[], string[]][] = [
     0,
     'Turret sustain',
     ['Utility', 'Sustain'],
-    ['Bustling Fungus', 'N’kuhana’s Opinion', 'Rejuvenation Rack', 'Aegis', 'AtG Missile Mk. 1'],
+    ['Bustling Fungus', "Soldier's Syringe", 'AtG Missile Mk. 1', 'Ukulele'],
   ],
   [
     'artificer',
@@ -65,7 +65,7 @@ const rows: [string, string, number, string, string[], string[]][] = [
     0,
     'Fire burst',
     ['Ranged', 'Burst'],
-    ['Ignition Tank', 'Crowbar', 'Kjaro’s Band', 'Runald’s Band', 'Backup Magazine'],
+    ['Ignition Tank', "Kjaro's Band", "Runald's Band", 'Backup Magazine'],
   ],
   [
     'mercenary',
@@ -73,42 +73,84 @@ const rows: [string, string, number, string, string[], string[]][] = [
     0,
     'Melee / Cooldown',
     ['Melee', 'Mobility'],
-    ['Focus Crystal', 'Hardlight Afterburner', 'Lysate Cell', 'Alien Head', 'Backup Magazine'],
+    ['Focus Crystal', 'Alien Head', 'Lysate Cell', 'Hardlight Afterburner'],
   ],
   [
     'rex',
     'REX',
     0,
-    'Self-sustain / Debuff',
-    ['Ranged', 'Sustain'],
-    ['Razorwire', 'Medkit', 'Planula', 'Rejuvenation Rack', 'Death Mark'],
+    'Safe DIRECTIVE / Ranged on-hit',
+    ['Ranged', 'On-hit'],
+    ["Soldier's Syringe", "Lens-Maker's Glasses", 'Tri-Tip Dagger', 'AtG Missile Mk. 1'],
   ],
-  ['loader', 'Loader', 0, 'Punch burst', ['Melee', 'Burst', 'Mobility'], []],
+  [
+    'loader',
+    'Loader',
+    0,
+    'Punch burst',
+    ['Melee', 'Burst', 'Mobility'],
+    [
+      'Crowbar',
+      "Runald's Band",
+      "Kjaro's Band",
+      'Focus Crystal',
+      'Hardlight Afterburner',
+      'Backup Magazine',
+    ],
+  ],
   [
     'acrid',
     'Acrid',
     0,
     'Poison / Cleanup',
     ['Melee', 'Damage over time'],
-    ['Backup Magazine', 'Gasoline', 'Will-o’-the-wisp', 'Ukulele', 'Paul’s Goat Hoof'],
+    ['Gasoline', "Will-o'-the-wisp", "Paul's Goat Hoof", 'Hopoo Feather', 'Backup Magazine'],
   ],
-  ['captain', 'Captain', 0, 'Sustained damage / On-hit', ['Ranged', 'On-hit', 'Utility'], []],
+  [
+    'captain',
+    'Captain',
+    0,
+    'Sustained damage / On-hit',
+    ['Ranged', 'On-hit', 'Utility'],
+    [
+      'Tri-Tip Dagger',
+      'AtG Missile Mk. 1',
+      'Ukulele',
+      "Soldier's Syringe",
+      "Lens-Maker's Glasses",
+      'Shatterspleen',
+    ],
+  ],
   [
     'heretic',
     'Heretic',
     0,
-    'Survival / Cooldown',
+    'Health sustain / Shadowfade / Cooldowns',
     ['Ranged', 'Sustain'],
-    ['Transcendence', 'Cautious Slug', 'Alien Head', 'Gnarled Woodsprite', 'Ukulele'],
+    ['Alien Head', 'Hardlight Afterburner', 'Gnarled Woodsprite', 'Cautious Slug'],
   ],
-  ['railgunner', 'Railgunner', 1, 'Precision / Burst', ['Ranged', 'Burst', 'Crit'], []],
+  [
+    'railgunner',
+    'Railgunner',
+    1,
+    'Precision / Burst',
+    ['Ranged', 'Burst', 'Crit'],
+    [
+      'Crowbar',
+      "Runald's Band",
+      "Kjaro's Band",
+      'Laser Scope',
+      "Lens-Maker's Glasses",
+      'Armor-Piercing Rounds',
+    ],
+  ],
   [
     'void-fiend',
     'Void Fiend',
     1,
     'Corruption / On-hit',
     ['Ranged', 'On-hit'],
-    ['Lens-Maker’s Glasses', 'Polylute', 'Plasma Shrimp', 'Safer Spaces', 'Cautious Slug'],
+    ["Lens-Maker's Glasses", "Soldier's Syringe", 'Polylute', 'Plasma Shrimp'],
   ],
   [
     'seeker',
@@ -116,7 +158,7 @@ const rows: [string, string, number, string, string[], string[]][] = [
     2,
     'Sustained damage / Barrier',
     ['Sustain', 'Utility'],
-    ['Backup Magazine', 'Focus Crystal', 'Ukulele', 'AtG Missile Mk. 1', 'Rejuvenation Rack'],
+    ['Backup Magazine', 'Focus Crystal', 'AtG Missile Mk. 1', 'Ukulele'],
   ],
   [
     'false-son',
@@ -124,7 +166,7 @@ const rows: [string, string, number, string, string[], string[]][] = [
     2,
     'Health scaling / Sustain',
     ['Melee', 'Sustain'],
-    ['Bison Steak', 'Infusion', 'Searsteed', 'Cautious Slug', 'Runald’s Band'],
+    ['Bison Steak', 'Infusion', "Runald's Band", "Kjaro's Band"],
   ],
   [
     'chef',
@@ -132,7 +174,7 @@ const rows: [string, string, number, string, string[], string[]][] = [
     2,
     'Burn / Close range',
     ['Melee', 'Damage over time'],
-    ['Ignition Tank', 'Backup Magazine', 'Gasoline', 'Ukulele', 'AtG Missile Mk. 1'],
+    ['Ignition Tank', 'Gasoline', 'Focus Crystal', 'Backup Magazine', "Paul's Goat Hoof"],
   ],
   [
     'operator',
@@ -140,7 +182,7 @@ const rows: [string, string, number, string, string[], string[]][] = [
     3,
     'Drone support / Utility',
     ['Ranged', 'Utility'],
-    ['Spare Drone Parts', 'AtG Missile Mk. 1', 'Ukulele', 'Mocha', 'Lens-Maker’s Glasses'],
+    ['Spare Drone Parts', 'Box of Dynamite', 'Empathy Cores', "Paul's Goat Hoof"],
   ],
   [
     'drifter',
@@ -148,13 +190,7 @@ const rows: [string, string, number, string, string[], string[]][] = [
     3,
     'Junk generation / Mobility',
     ['Utility', 'Mobility'],
-    [
-      'Collector’s Compulsion',
-      'Lens-Maker’s Glasses',
-      'Mocha',
-      'Soldier’s Syringe',
-      'Backup Magazine',
-    ],
+    ["Collector's Compulsion", "Soldier's Syringe", 'Focus Crystal', "Kjaro's Band"],
   ],
   [
     'enforcer',
@@ -162,12 +198,12 @@ const rows: [string, string, number, string, string[], string[]][] = [
     4,
     'Defense / Sustained damage',
     ['Ranged', 'Sustain'],
-    ['Mocha', 'Hopoo Feather', 'Soldier’s Syringe', 'Ukulele', 'AtG Missile Mk. 1'],
+    ["Soldier's Syringe", 'AtG Missile Mk. 1', 'Ukulele', 'Hopoo Feather'],
   ],
 ];
 const tiers: Record<string, Record<Tier, string[]>> = {
   railgunner: {
-    Optimal: [
+    'Core Items': [
       'Crowbar',
       'Runald’s Band',
       'Kjaro’s Band',
@@ -201,7 +237,7 @@ const tiers: Record<string, Record<Tier, string[]>> = {
     ],
   },
   loader: {
-    Optimal: [
+    'Core Items': [
       'Crowbar',
       'Runald’s Band',
       'Kjaro’s Band',
@@ -235,7 +271,7 @@ const tiers: Record<string, Record<Tier, string[]>> = {
     ],
   },
   captain: {
-    Optimal: [
+    'Core Items': [
       'Tri-Tip Dagger',
       'AtG Missile Mk. 1',
       'Ukulele',

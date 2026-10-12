@@ -1,5 +1,10 @@
 {
-  "Optimal": ["Soldier's Syringe", "Lens-Maker's Glasses", "Tri-Tip Dagger", "AtG Missile Mk. 1"],
+  "Core Items": [
+    "Soldier's Syringe",
+    "Lens-Maker's Glasses",
+    "Tri-Tip Dagger",
+    "AtG Missile Mk. 1"
+  ],
   "Best": ["Ukulele", "Rejuvenation Rack", "Hopoo Feather", "Paul's Goat Hoof"],
   "Okay": ["Medkit", "Planula", "Repulsion Armor Plate", "Death Mark"],
   "Not Good": ["Razorwire", "Bustling Fungus", "Focus Crystal", "Transcendence"]

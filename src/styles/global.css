@@ -1273,3 +1273,14 @@ summary small {
     transition: none !important;
   }
 }
+
+.item-rarity {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 5px;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 1.4;
+  white-space: nowrap;
+}

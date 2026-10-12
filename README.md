@@ -39,8 +39,8 @@ The site URL is https://XDPierre.github.io/ror2-build-atlas/; account ownership 
 ```text
 ror2-build-atlas/
 ├── assets/
-│   ├── survivors/          Original survivor infographics
-│   ├── tier-guides/        Optional expanded guides, matched by survivor filename
+│   ├── survivors/          Revised survivor starter infographics
+│   ├── tier-guides/        Expanded guides, matched by survivor filename
 │   ├── maps/               PNG maps shown on the home page
 │   └── previews/           Derived artwork used by the featured hero
 ├── src/
@@ -58,7 +58,7 @@ ror2-build-atlas/
 │   │   ├── survivors.ts     Survivor metadata, DLC grouping, and supplied tier indexes
 │   │   ├── tier-guides/     Generated tier indexes, one JSON per survivor
 │   │   ├── portals.ts       Portal route metadata
-│   │   └── references.ts    Wiki URLs, uncertain names, and mechanics corrections
+│   │   └── references.ts    Wiki URLs and mechanics corrections
 │   └── styles/
 │       └── global.css      Shared design and responsive layouts
 ├── docs/image-prompts/     Exact generation prompts, wiki sources, and QA notes
@@ -108,15 +108,15 @@ Acolyte is a coming-soon block separate from the 20 supplied cards. Playstyle ta
 
 ## Generated tier-guide collection
 
-The 17 survivors missing tier-guide images were assigned to separate agents, with up to three agents working concurrently. The original Captain, Loader, and Railgunner guides are preserved. Every supplied survivor now has a matching PNG in `assets/tier-guides/`, shown separately from its original survivor infographic.
+The 17 survivors missing tier-guide images were initially assigned to separate agents, with up to three agents working concurrently. Every supplied survivor has a matching PNG in `assets/tier-guides/`, shown separately from its starter infographic. Subsequent coordinated edits cover all 20 pairs, including Captain, Loader, and Railgunner.
 
-New images were made with the built-in `image_gen` tool, using the corresponding survivor image as subject reference and the Captain guide as a layout reference. Each includes four rows (Optimal, Best, Okay, Not Good), a specific build/loadout scope, and an AI-generated/proposed-rankings disclaimer. Mechanics and names were researched; tier placement and generated iconography remain unverified editorial proposals. “Not Good” means lower priority for that particular build.
+Images were made and revised with the built-in `image_gen` tool. Each tier guide includes four rows (Core Items, Best, Okay, Not Good), a specific build/loadout scope, and an AI-generated/proposed-build disclaimer. The starter summarizes the same Core Items selection. Individual tile borders and category labels indicate game rarity independently of row priority; the editable lookup is `src/data/item-rarities.json`. Mechanics and names were researched; tier placement and generated iconography remain editorial proposals. “Not Good” means lower priority for that particular build.
 
-Each new guide has editable arrays in `src/data/tier-guides/<id>.json`. The site loads these automatically; the original three indexes stay in `src/data/survivors.ts`. [Generation records](docs/image-prompts/README.md) preserve every exact prompt, input roles, wiki sources, method, visual review, and limitations. Targeted image edits corrected the Engineer Purity icon and Heretic Armor Plate wording.
+Each generated guide has editable arrays in `src/data/tier-guides/<id>.json`. The site loads these automatically; the original three indexes stay in `src/data/survivors.ts`. [Generation records](docs/image-prompts/README.md) preserve exact prompts, references, sources, reviews, and limitations. [Coordinated revision records](docs/image-prompts/revisions/README.md) document the heading, rarity, and starter-consistency corrections; the [audit report](docs/core-item-audit.md) tracks their results. Historical prompts retain superseded wording for provenance.
 
 ## Accuracy and sources
 
-Supplied artwork is AI-generated, not official item sprites or verified tier lists. The item indexes are transcriptions rather than endorsements. Some item names, icons, and recommendations may be inaccurate. The original Searsteed label remains unverified. Collector’s Compulsion was confirmed during Drifter research; its item-name warning has been removed. The image text is preserved; corrections appear separately.
+Artwork is AI-generated, not official item sprites or verified tier lists. The item indexes are transcriptions rather than endorsements. Some icons, mechanics, and recommendations may still be inaccurate. The old False Son starter-only labels were removed during consistency edits; they were not mapped to other items. Collector’s Compulsion was confirmed during Drifter research. Previously identified mechanics corrections appear in the site, and were applied to the revised original three tier guides where relevant.
 
 Wiki search excerpts were reviewed October 11, 2026; direct wiki page retrieval returned HTTP 403. This limited mechanics review does not certify all item recommendations or rankings.
 

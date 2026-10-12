@@ -1,5 +1,11 @@
 {
-  "Optimal": ["Ignition Tank", "Gasoline", "Focus Crystal", "Backup Magazine", "Paul's Goat Hoof"],
+  "Core Items": [
+    "Ignition Tank",
+    "Gasoline",
+    "Focus Crystal",
+    "Backup Magazine",
+    "Paul's Goat Hoof"
+  ],
   "Best": ["Hopoo Feather", "Soldier's Syringe", "Tougher Times", "Ukulele", "AtG Missile Mk. 1"],
   "Okay": [
     "Crowbar",

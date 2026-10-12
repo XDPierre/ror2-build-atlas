@@ -2,6 +2,7 @@ import ExternalLink from '../components/ExternalLink';
 import ImageViewer from '../components/ImageViewer';
 import { survivors, type Survivor } from '../data/survivors';
 import { corrections, itemWiki, uncertainItems, wiki } from '../data/references';
+import { itemRarity } from '../data/rarities';
 export default function SurvivorPage({ survivor: s }: { survivor: Survivor }) {
   return (
     <main id="main" className="detail">
@@ -62,7 +63,8 @@ export default function SurvivorPage({ survivor: s }: { survivor: Survivor }) {
           <h3>{s.tiers ? 'Infographic tier index' : 'Infographic item index'}</h3>
           <p className="muted small">
             Item index for this illustration. Rankings have not been validated; “Not Good” is a
-            context-dependent image label.
+            context-dependent image label. Tile colors and rarity labels describe game rarity,
+            independently of build priority.
           </p>
           {s.tiers ? (
             Object.entries(s.tiers).map(([tier, items], i) => (
@@ -75,6 +77,17 @@ export default function SurvivorPage({ survivor: s }: { survivor: Survivor }) {
                   {items.map((item) => (
                     <li key={item}>
                       <ExternalLink href={itemWiki(item)}>{item}</ExternalLink>
+                      {itemRarity(item) && (
+                        <small
+                          className="item-rarity"
+                          style={{
+                            color: itemRarity(item).color,
+                            borderColor: itemRarity(item).color,
+                          }}
+                        >
+                          {itemRarity(item).rarity}
+                        </small>
+                      )}
                       {uncertainItems.has(item) && (
                         <small className="unverified-name">Name unverified · wiki search</small>
                       )}

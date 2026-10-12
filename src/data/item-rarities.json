@@ -1,0 +1,294 @@
+{
+  "Tri-Tip Dagger": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Soldier's Syringe": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Lens-Maker's Glasses": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Paul's Goat Hoof": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Backup Magazine": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Crowbar": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Focus Crystal": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Gasoline": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Tougher Times": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Bustling Fungus": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Warbanner": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Bison Steak": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Cautious Slug": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Medkit": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Repulsion Armor Plate": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Armor-Piercing Rounds": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Topaz Brooch": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Energy Drink": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Mocha": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Monster Tooth": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "Bundle of Fireworks": {
+    "rarity": "Common",
+    "color": "#FFFFFF"
+  },
+  "AtG Missile Mk. 1": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Ukulele": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Will-o'-the-wisp": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Hopoo Feather": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Predatory Instincts": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Leeching Seed": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Red Whip": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Harvester's Scythe": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Fuel Cell": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Infusion": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Bandolier": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Rose Buckler": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Runald's Band": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Kjaro's Band": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Wax Quail": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Lepton Daisy": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Razorwire": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Squid Polyp": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Death Mark": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Ignition Tank": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Regenerating Scrap": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Luminous Shot": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Box of Dynamite": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "Collector's Compulsion": {
+    "rarity": "Uncommon",
+    "color": "#00FF66"
+  },
+  "57 Leaf Clover": {
+    "rarity": "Legendary",
+    "color": "#FF0033"
+  },
+  "N'kuhana's Opinion": {
+    "rarity": "Legendary",
+    "color": "#FF0033"
+  },
+  "Alien Head": {
+    "rarity": "Legendary",
+    "color": "#FF0033"
+  },
+  "Hardlight Afterburner": {
+    "rarity": "Legendary",
+    "color": "#FF0033"
+  },
+  "Rejuvenation Rack": {
+    "rarity": "Legendary",
+    "color": "#FF0033"
+  },
+  "Aegis": {
+    "rarity": "Legendary",
+    "color": "#FF0033"
+  },
+  "Shattering Justice": {
+    "rarity": "Legendary",
+    "color": "#FF0033"
+  },
+  "Laser Scope": {
+    "rarity": "Legendary",
+    "color": "#FF0033"
+  },
+  "Spare Drone Parts": {
+    "rarity": "Legendary",
+    "color": "#FF0033"
+  },
+  "Shatterspleen": {
+    "rarity": "Boss",
+    "color": "#FFFF00"
+  },
+  "Planula": {
+    "rarity": "Boss",
+    "color": "#FFFF00"
+  },
+  "Empathy Cores": {
+    "rarity": "Boss",
+    "color": "#FFFF00"
+  },
+  "Shaped Glass": {
+    "rarity": "Lunar",
+    "color": "#0066FF"
+  },
+  "Transcendence": {
+    "rarity": "Lunar",
+    "color": "#0066FF"
+  },
+  "Purity": {
+    "rarity": "Lunar",
+    "color": "#0066FF"
+  },
+  "Hooks of Heresy": {
+    "rarity": "Lunar",
+    "color": "#0066FF"
+  },
+  "Essence of Heresy": {
+    "rarity": "Lunar",
+    "color": "#0066FF"
+  },
+  "Focused Convergence": {
+    "rarity": "Lunar",
+    "color": "#0066FF"
+  },
+  "Stone Flux Pauldron": {
+    "rarity": "Lunar",
+    "color": "#0066FF"
+  },
+  "Light Flux Pauldron": {
+    "rarity": "Lunar",
+    "color": "#0066FF"
+  },
+  "Safer Spaces": {
+    "rarity": "Void",
+    "color": "#C678B4"
+  },
+  "Weeping Fungus": {
+    "rarity": "Void",
+    "color": "#C678B4"
+  },
+  "Lysate Cell": {
+    "rarity": "Void",
+    "color": "#C678B4"
+  },
+  "Polylute": {
+    "rarity": "Void",
+    "color": "#C678B4"
+  },
+  "Plasma Shrimp": {
+    "rarity": "Void",
+    "color": "#C678B4"
+  },
+  "Gnarled Woodsprite": {
+    "rarity": "Equipment",
+    "color": "#FF6633"
+  },
+  "The Back-up": {
+    "rarity": "Equipment",
+    "color": "#FF6633"
+  },
+  "Spinel Tonic": {
+    "rarity": "Lunar Equipment",
+    "color": "#0066FF"
+  }
+}

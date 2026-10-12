@@ -12,7 +12,9 @@ The [MIT License](LICENSE) covers the project's original code and authored docum
 | `assets/maps/*.png` (1 file)                         | Supplied conceptual map illustration; its routes are not verified game data.                                                                                                                                                         | Excluded from MIT; original provenance and applicable permissions remain unverified.                             |
 | `assets/previews/*` (20 files)                       | Crops derived from the supplied survivor artwork.                                                                                                                                                                                    | Same exclusions and unresolved permissions as their source images.                                               |
 
-Exact prompts, reference roles, research links, and review notes for the 17 generated guides are in [docs/image-prompts](docs/image-prompts/README.md). Their project-original text is covered by MIT; this does not extend to referenced third-party material or the resulting images.
+The current 20 starter images and 20 tier-guide images are built-in `image_gen` revisions of the sources listed above. The inventory describes their original provenance, not an assertion that those original files remain unchanged. [Coordinated revision records](docs/image-prompts/revisions/README.md) document the updated core selections, headings, rarity colors, and review. The map and preview files were not part of these revisions.
+
+Exact prompts, reference roles, research links, and review notes are in [docs/image-prompts](docs/image-prompts/README.md). Their project-original text is covered by MIT; this does not extend to referenced third-party material or the resulting images.
 
 ## Game artwork and names
 
