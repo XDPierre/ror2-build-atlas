@@ -6,7 +6,7 @@ Reference 1: original Loader image for subject design. Reference 2: `assets/surv
 
 Research: [Loader](https://riskofrain2.wiki.gg/wiki/Loader), reviewed using indexed wiki excerpts. The brief describes charged punches and mobility without numeric claims; the item selection is a proposed build, not a verified ranking. Item illustrations are generated, not official sprites.
 
-## Exact prompt
+## Initial prompt (superseded core-item selection)
 
 ```text
 Use case: infographic-diagram. Create a portrait 1024x1536 starter survivor infographic for this fan-made Risk of Rain 2 collection.
@@ -16,6 +16,18 @@ Exact text: "LOADER"; "Build Focus: Punch Burst"; "CORE ITEMS"; five evenly spac
 Title must read at thumbnail size. All five names spelled exactly, no additional rankings, no official logos or affiliation claim. This is a starter overview, not a four-tier image.
 ```
 
-## Visual review
+## Initial visual review
 
 Inspected the final 1024 × 1536 PNG: large Loader title and illustration, five legible core-item labels, one explanation box, and the unofficial/AI-generated/proposed-build footer. No tier rows. The gallery and first detail image already use this path; the separate tier-guide path is preserved. Artwork remains excluded from MIT under [ASSET_LICENSES.md](../../ASSET_LICENSES.md).
+
+## Core-item consistency correction
+
+The first version mistakenly selected five items, including Paul's Goat Hoof from the tier guide's Best row. The corrected starter uses exactly the six items in Loader's existing Optimal row: Crowbar, Runald's Band, Kjaro's Band, Focus Crystal, Hardlight Afterburner, and Backup Magazine. The initial prompt above is retained as generation history; it does not describe the current core-item selection.
+
+### Exact edit prompt
+
+Visual review of the corrected 1024 × 1536 PNG confirmed all six labels in the same order as the tier guide's Optimal row, with no Goat Hoof tile. The large survivor illustration, title, explanation, and disclaimer remain. The tier-guide checksum was verified unchanged.
+
+```text
+undefined
+```
