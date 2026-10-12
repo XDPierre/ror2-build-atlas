@@ -20,6 +20,24 @@ npm run preview
 
 ## Run with Docker
 
+### Development with hot reload
+
+```sh
+docker compose up
+```
+
+Open <http://localhost:5173/ror2-build-atlas/>. Edits to source, styles, data, and
+artwork are mounted into the container and picked up by Vite automatically. No
+image rebuild or container restart is needed for these edits. Polling enables
+file-change detection with Docker Desktop on Windows. Dependencies are kept in
+a Docker volume, separate from the host's `node_modules`.
+
+After changing `package.json` or `package-lock.json`, run
+`docker compose restart frontend` to reinstall dependencies. Stop development
+with Ctrl+C; use `docker compose down` to remove its container and network.
+
+### Production image
+
 With Docker running in Linux container mode, build and start the production site:
 
 ```sh
