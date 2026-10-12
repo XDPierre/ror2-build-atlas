@@ -3,7 +3,10 @@ import ImageViewer from '../components/ImageViewer';
 import { survivors, type Survivor } from '../data/survivors';
 import { corrections, itemWiki, uncertainItems, wiki } from '../data/references';
 import { itemRarity } from '../data/rarities';
+import AbilityPanel from '../components/AbilityPanel';
+import { survivorLoadouts } from '../data/abilities';
 export default function SurvivorPage({ survivor: s }: { survivor: Survivor }) {
+  const loadout = survivorLoadouts[s.id];
   return (
     <main id="main" className="detail">
       <a className="back" href="#survivors">
@@ -23,7 +26,7 @@ export default function SurvivorPage({ survivor: s }: { survivor: Survivor }) {
             <p className="eyebrow">SURVIVOR INFOGRAPHIC</p>
             <ImageViewer src={s.image} name={s.name} />
           </section>
-          {s.tierImage && (
+          {s.tierImage && !loadout && (
             <section id="tier-guide" className="available-tier-guide">
               <p className="eyebrow">AVAILABLE TIER GUIDE</p>
               <h2>{s.name} tier guide</h2>
@@ -125,6 +128,20 @@ export default function SurvivorPage({ survivor: s }: { survivor: Survivor }) {
           </details>
         </aside>
       </div>
+      {s.tierImage && loadout && (
+        <section
+          id="tier-guide"
+          className="available-tier-guide tier-guide-pilot"
+          aria-label={`${s.name} tier guide and abilities`}
+        >
+          <p className="eyebrow">AVAILABLE TIER GUIDE</p>
+          <h2>{s.name} tier guide</h2>
+          <div className="tier-guide-layout">
+            <ImageViewer src={s.tierImage} name={`${s.name} tier guide`} />
+            <AbilityPanel key={s.id} survivorName={s.name} loadout={loadout} />
+          </div>
+        </section>
+      )}
       <nav className="detail-next" aria-label="Other survivor guides">
         {survivors
           .filter((x) => x.dlc === s.dlc && x.id !== s.id)

@@ -1239,6 +1239,96 @@ summary small {
 .available-tier-guide h2 {
   font-size: 32px;
 }
+.tier-guide-pilot {
+  margin-top: 48px;
+}
+.tier-guide-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+.ability-panel {
+  position: sticky;
+  top: 24px;
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--lime);
+  border-radius: 6px;
+  background: var(--panel);
+  scrollbar-width: thin;
+}
+.ability-panel h2 {
+  margin: 4px 0 12px;
+}
+.ability-context {
+  color: var(--muted);
+  font-size: 15px;
+}
+.ability-slots {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+.ability-card {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #0c1519;
+}
+.ability-card .ability-role {
+  margin: 0 0 6px;
+  color: var(--lime);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.ability-card h3 {
+  margin: 0;
+  font-size: 24px;
+}
+.ability-card select {
+  width: 100%;
+  margin: 0;
+  min-height: 44px;
+  font-size: 17px;
+}
+.ability-card p {
+  margin: 10px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.ability-cooldown {
+  display: inline-block;
+  margin-top: 8px;
+  color: #b8dcdf;
+  font-size: 12px;
+}
+.ability-card .ability-note {
+  color: var(--muted);
+  font-size: 14px;
+}
+.ability-source {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+@media (max-width: 800px) {
+  .tier-guide-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .ability-panel {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    padding: 20px;
+  }
+}
 .home-maps {
   margin: 40px 0;
 }

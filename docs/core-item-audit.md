@@ -37,6 +37,8 @@ Exact prompts, per-image hashes, visual-review notes, and rarity sources are in 
 
 ## Verification after revisions
 
+Drifter's tier guide was subsequently replaced with the approved [stack-planning sketch](image-prompts/drifter-stack-sketch.md), retaining the same row membership and rarity categories. Its starter was not changed. A readable companion abilities panel is the first-survivor preview; selectors affect only the displayed skill reference, not the sketch's proposed item ratios.
+
 Lint, formatting checks, TypeScript, and the production Vite build passed. Local DOM checks passed for all 20 detail routes, the Core Items heading, a colored rarity label for every indexed item, current starter/tier image references, gallery filters, image dialogs, and GitHub Pages asset paths. File checks confirmed all 40 revised PNG hashes and dimensions, rarity lookup coverage, and matching starter core arrays. Native browser layout and touch interaction remain outside this DOM check.
 
 ## Original findings (before coordinated edits)

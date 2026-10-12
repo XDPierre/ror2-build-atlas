@@ -1,5 +1,7 @@
 # Drifter coordinated image revision
 
+The tier PNG recorded below was subsequently replaced with the approved [stack-planning sketch](../drifter-stack-sketch.md). Its earlier hash and prompt remain here as revision history. The starter from this record remains current.
+
 Method: built-in image_gen edits. References: existing starter as edit target; existing tier guide as edit target or item reference. Item rarity source: [rarity verification](README.md). Rankings remain proposed, icons remain generated.
 
 ## Tier-guide edit prompt
