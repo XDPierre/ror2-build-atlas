@@ -25,8 +25,10 @@ Nothing has been committed, pushed, or deployed by Codex. Review before publishi
 1. Create a public repository named ror2-build-atlas on your GitHub account. GitHub Free supports Pages for public repositories.
 2. After approving publication, commit and push this project. Verify any existing remote with git remote -v before changing it. Keep package-lock.json tracked.
 3. In Settings → Pages → Build and deployment choose GitHub Actions.
-4. Use GitHub's static HTML Pages workflow template. Add actions/setup-node@v4 with node-version: '22' and cache: npm after checkout, then npm ci and npm run build. Change the upload-pages-artifact path from '.' to dist. Keep configure-pages@v5, upload-pages-artifact@v4, deploy-pages@v4, the github-pages environment, and pages: write / id-token: write permissions. Match the workflow trigger to your default branch.
-5. Pushing the workflow may publish immediately. Add it only when you are ready to deploy.
+4. The included [Pages workflow](.github/workflows/deploy.yml) runs `npm ci` and `npm run check` with Node.js 22, then uploads `dist/` and deploys through the `github-pages` environment. It uses GitHub's official actions pinned to specific revisions. Pull requests targeting `main` run checks without deploying.
+5. After publication approval, push the workflow and site to `main`. Successful pushes to `main` deploy automatically. You can also run **Check and deploy GitHub Pages** manually from the Actions tab, selecting `main`. If your default branch changes, update the workflow triggers and deployment conditions.
+
+The workflow is prepared locally; no Actions run or deployment has been triggered by Codex. GitHub Pages must be configured with **GitHub Actions** as its source before deployment. The deployment URL appears in the workflow's environment link after a successful run.
 
 Full instructions: [GitHub custom Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
