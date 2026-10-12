@@ -1,0 +1,139 @@
+{
+  "title": "Heretic",
+  "subtitle": "Health sustain / Shadowfade / Cooldowns / Proposed ratios",
+  "intro": "Proposed copy ratios for this loadout.",
+  "rows": [
+    {
+      "title": "Core Items",
+      "summary": "Core priorities for this build.",
+      "color": "#ffd65a",
+      "items": [
+        {
+          "name": "Alien Head",
+          "badge": "1%",
+          "description": "Shortens skill cooldowns."
+        },
+        {
+          "name": "Hardlight Afterburner",
+          "badge": "1%",
+          "description": "Adds utility charges and reduces cooldown."
+        },
+        {
+          "name": "Gnarled Woodsprite",
+          "badge": "1",
+          "badgeLabel": "equip",
+          "description": "Equipment: healing companion for you or an ally."
+        },
+        {
+          "name": "Cautious Slug",
+          "badge": "1%",
+          "description": "Improves recovery outside combat."
+        }
+      ]
+    },
+    {
+      "title": "Best",
+      "summary": "Strong supporting choices.",
+      "color": "#33dfff",
+      "items": [
+        {
+          "name": "AtG Missile Mk. 1",
+          "badge": "1%",
+          "description": "Hits can launch a damaging missile."
+        },
+        {
+          "name": "Ukulele",
+          "badge": "1%",
+          "description": "Hits can trigger chain lightning."
+        },
+        {
+          "name": "Lens-Maker's Glasses",
+          "badge": "2%",
+          "description": "Increases critical-strike chance."
+        },
+        {
+          "name": "Paul's Goat Hoof",
+          "badge": "2%",
+          "description": "Increases movement speed."
+        }
+      ]
+    },
+    {
+      "title": "Okay",
+      "summary": "Useful depending on the run.",
+      "color": "#ef6aff",
+      "items": [
+        {
+          "name": "Hopoo Feather",
+          "badge": "1%",
+          "description": "Adds an extra jump."
+        },
+        {
+          "name": "Leeching Seed",
+          "badge": "1%",
+          "description": "Damaging hits restore health."
+        },
+        {
+          "name": "Medkit",
+          "badge": "1%",
+          "description": "Delayed healing after taking damage."
+        },
+        {
+          "name": "Tougher Times",
+          "badge": "1%",
+          "description": "Chance to block incoming damage."
+        }
+      ]
+    },
+    {
+      "title": "Not Good",
+      "summary": "Lower priority here; useful in other builds.",
+      "color": "#ff6262",
+      "items": [
+        {
+          "name": "Spinel Tonic",
+          "badge": "0%",
+          "description": "Equipment: temporary stat boost with affliction risk."
+        },
+        {
+          "name": "Shaped Glass",
+          "badge": "0%",
+          "description": "More damage at the cost of maximum health."
+        },
+        {
+          "name": "Razorwire",
+          "badge": "0%",
+          "description": "Taking damage strikes nearby enemies."
+        },
+        {
+          "name": "Repulsion Armor Plate",
+          "badge": "0%",
+          "description": "Reduces damage from individual hits."
+        }
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "label": "%",
+      "text": "Relative copy weight, NOT an in-game percentage."
+    },
+    {
+      "label": "1% : 5%",
+      "text": "1 copy : 5 copies; weights do not sum to 100."
+    },
+    {
+      "label": "0%",
+      "text": "Do not actively target; still usable if found."
+    },
+    {
+      "label": "Equip 1",
+      "text": "One equipped item, not a stack ratio."
+    }
+  ],
+  "notes": [
+    "Illustrative ratios; respect chance caps and void conversions.",
+    "Tile color = game rarity | Rows = build priority"
+  ],
+  "footer": "Unofficial fan guide | Wiki icons / AI header | Design sketch"
+}

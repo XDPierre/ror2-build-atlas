@@ -1,0 +1,139 @@
+{
+  "title": "Operator",
+  "subtitle": "Drone support / Utility / Proposed ratios",
+  "intro": "Proposed copy ratios for this loadout.",
+  "rows": [
+    {
+      "title": "Core Items",
+      "summary": "Core priorities for this build.",
+      "color": "#ffd65a",
+      "items": [
+        {
+          "name": "Spare Drone Parts",
+          "badge": "1%",
+          "description": "Empowers drones with weapons and attack speed."
+        },
+        {
+          "name": "Box of Dynamite",
+          "badge": "1%",
+          "description": "Adds a drone; drones drop stunning explosives."
+        },
+        {
+          "name": "Empathy Cores",
+          "badge": "1%",
+          "description": "Summons probes strengthened by allies."
+        },
+        {
+          "name": "Paul's Goat Hoof",
+          "badge": "2%",
+          "description": "Increases movement speed."
+        }
+      ]
+    },
+    {
+      "title": "Best",
+      "summary": "Strong supporting choices.",
+      "color": "#33dfff",
+      "items": [
+        {
+          "name": "The Back-up",
+          "badge": "1",
+          "badgeLabel": "equip",
+          "description": "Equipment: calls temporary attack drones."
+        },
+        {
+          "name": "Fuel Cell",
+          "badge": "1%",
+          "description": "Adds equipment charges and reduces cooldown."
+        },
+        {
+          "name": "Hardlight Afterburner",
+          "badge": "1%",
+          "description": "Adds utility charges and reduces cooldown."
+        },
+        {
+          "name": "Hopoo Feather",
+          "badge": "1%",
+          "description": "Adds an extra jump."
+        }
+      ]
+    },
+    {
+      "title": "Okay",
+      "summary": "Useful depending on the run.",
+      "color": "#ef6aff",
+      "items": [
+        {
+          "name": "AtG Missile Mk. 1",
+          "badge": "1%",
+          "description": "Hits can launch a damaging missile."
+        },
+        {
+          "name": "Ukulele",
+          "badge": "1%",
+          "description": "Hits can trigger chain lightning."
+        },
+        {
+          "name": "Soldier's Syringe",
+          "badge": "1%",
+          "description": "Increases attack speed."
+        },
+        {
+          "name": "Lens-Maker's Glasses",
+          "badge": "1%",
+          "description": "Increases critical-strike chance."
+        }
+      ]
+    },
+    {
+      "title": "Not Good",
+      "summary": "Lower priority here; useful in other builds.",
+      "color": "#ff6262",
+      "items": [
+        {
+          "name": "Bustling Fungus",
+          "badge": "0%",
+          "description": "Standing still creates a healing zone."
+        },
+        {
+          "name": "Focus Crystal",
+          "badge": "0%",
+          "description": "Extra damage against nearby enemies."
+        },
+        {
+          "name": "Warbanner",
+          "badge": "0%",
+          "description": "Level-ups and teleporter starts create a speed zone."
+        },
+        {
+          "name": "Lepton Daisy",
+          "badge": "0%",
+          "description": "Healing pulses during the teleporter event."
+        }
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "label": "%",
+      "text": "Relative copy weight, NOT an in-game percentage."
+    },
+    {
+      "label": "1% : 5%",
+      "text": "1 copy : 5 copies; weights do not sum to 100."
+    },
+    {
+      "label": "0%",
+      "text": "Do not actively target; still usable if found."
+    },
+    {
+      "label": "Equip 1",
+      "text": "One equipped item, not a stack ratio."
+    }
+  ],
+  "notes": [
+    "Illustrative ratios; respect chance caps and void conversions.",
+    "Tile color = game rarity | Rows = build priority"
+  ],
+  "footer": "Unofficial fan guide | Wiki icons / AI header | Design sketch"
+}

@@ -1,0 +1,134 @@
+{
+  "title": "False Son",
+  "subtitle": "Health scaling / Sustain / Proposed ratios",
+  "intro": "Proposed copy ratios for this loadout.",
+  "rows": [
+    {
+      "title": "Core Items",
+      "summary": "Core priorities for this build.",
+      "color": "#ffd65a",
+      "items": [
+        {
+          "name": "Bison Steak",
+          "badge": "1%",
+          "description": "Adds a small amount of maximum health."
+        },
+        {
+          "name": "Infusion",
+          "badge": "1%",
+          "description": "Kills gradually increase maximum health."
+        },
+        {
+          "name": "Runald's Band",
+          "badge": "1%",
+          "description": "Heavy hits trigger an ice burst; has a cooldown."
+        },
+        {
+          "name": "Kjaro's Band",
+          "badge": "1%",
+          "description": "Heavy hits trigger a flame burst; has a cooldown."
+        }
+      ]
+    },
+    {
+      "title": "Best",
+      "summary": "Strong supporting choices.",
+      "color": "#33dfff",
+      "items": [
+        {
+          "name": "AtG Missile Mk. 1",
+          "badge": "1%",
+          "description": "Hits can launch a damaging missile."
+        },
+        {
+          "name": "Ukulele",
+          "badge": "1%",
+          "description": "Hits can trigger chain lightning."
+        },
+        {
+          "name": "Hopoo Feather",
+          "badge": "1%",
+          "description": "Adds an extra jump."
+        },
+        {
+          "name": "Paul's Goat Hoof",
+          "badge": "2%",
+          "description": "Increases movement speed."
+        }
+      ]
+    },
+    {
+      "title": "Okay",
+      "summary": "Useful depending on the run.",
+      "color": "#ef6aff",
+      "items": [
+        {
+          "name": "Medkit",
+          "badge": "1%",
+          "description": "Delayed healing after taking damage."
+        },
+        {
+          "name": "Leeching Seed",
+          "badge": "1%",
+          "description": "Damaging hits restore health."
+        },
+        {
+          "name": "Tougher Times",
+          "badge": "1%",
+          "description": "Chance to block incoming damage."
+        },
+        {
+          "name": "Stone Flux Pauldron",
+          "badge": "1%",
+          "description": "More maximum health at the cost of movement speed."
+        }
+      ]
+    },
+    {
+      "title": "Not Good",
+      "summary": "Lower priority here; useful in other builds.",
+      "color": "#ff6262",
+      "items": [
+        {
+          "name": "Transcendence",
+          "badge": "0%",
+          "description": "Converts most health into regenerating shields."
+        },
+        {
+          "name": "Shaped Glass",
+          "badge": "0%",
+          "description": "More damage at the cost of maximum health."
+        },
+        {
+          "name": "Bustling Fungus",
+          "badge": "0%",
+          "description": "Standing still creates a healing zone."
+        },
+        {
+          "name": "Squid Polyp",
+          "badge": "0%",
+          "description": "Interactables summon a temporary turret."
+        }
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "label": "%",
+      "text": "Relative copy weight, NOT an in-game percentage."
+    },
+    {
+      "label": "1% : 5%",
+      "text": "1 copy : 5 copies; weights do not sum to 100."
+    },
+    {
+      "label": "0%",
+      "text": "Do not actively target; still usable if found."
+    }
+  ],
+  "notes": [
+    "Illustrative ratios; respect chance caps and void conversions.",
+    "Tile color = game rarity | Rows = build priority"
+  ],
+  "footer": "Unofficial fan guide | Wiki icons / AI header | Design sketch"
+}

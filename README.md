@@ -1,4 +1,4 @@
-﻿# ROR2 Build Atlas
+# ROR2 Build Atlas
 
 An unofficial, responsive Risk of Rain 2 infographic collection built with Vite, React, and TypeScript. Includes all 20 supplied survivor guides, DLC and playstyle filters, survivor/item search, shareable detail views, full-resolution zoom, tier indexes for every supplied survivor, wiki links, and partial portal references. No backend or paid service is required.
 
@@ -60,47 +60,47 @@ artwork, and configuration, excluding local dependencies and generated output.
 
 ```text
 ror2-build-atlas/
-├── assets/
-│   ├── survivors/          Revised survivor starter infographics
-│   ├── tier-guides/        Expanded guides, matched by survivor filename
-│   ├── maps/               PNG maps shown on the home page
-│   └── previews/           Derived artwork used by the featured hero
-├── src/
-│   ├── main.tsx            Mounts React and loads the stylesheet
-│   ├── App.tsx             Site header/footer and hash-based page routing
-│   ├── pages/
-│   │   ├── HomePage.tsx     Search, filters, survivor gallery, and maps
-│   │   ├── SurvivorPage.tsx Survivor infographic and available tier guide
-│   │   └── PortalPage.tsx   Sourced portal references
-│   ├── components/
-│   │   ├── ImageViewer.tsx  Shared full-resolution dialog and zoom controls
-│   │   ├── AbilityPanel.tsx Survivor skill selectors and summaries
-│   │   └── ExternalLink.tsx Accessible links that open in a new tab
-│   ├── data/
-│   │   ├── assets.ts        Vite image imports and map discovery
-│   │   ├── survivors.ts     Survivor metadata, DLC grouping, and supplied tier indexes
-│   │   ├── abilities.ts     Survivor loadouts, skill summaries, and alternate choices
-│   │   ├── tier-guides/     Generated tier indexes, one JSON per survivor
-│   │   ├── portals.ts       Portal route metadata
-│   │   └── references.ts    Wiki URLs and mechanics corrections
-│   └── styles/
-│       └── global.css      Shared design and responsive layouts
-├── docs/image-prompts/     Exact generation prompts, wiki sources, and QA notes
-├── index.html              HTML entry point
-├── vite.config.ts          GitHub Pages base path
-├── tsconfig.json           TypeScript checks
-├── eslint.config.js        JavaScript, TypeScript, and React lint rules
-├── .prettierrc.json         Formatting rules
-├── .prettierignore          Files excluded from formatting
-├── .editorconfig           Editor defaults
-├── package.json            Commands and dependencies
-├── package-lock.json       Reproducible dependency versions
-├── LICENSE                 MIT license for original code and documentation
-├── ASSET_LICENSES.md        Media provenance and third-party rights
-└── README.md               Setup, architecture, and publishing guide
+â”œâ”€â”€ assets/
+â”‚   â”œâ”€â”€ survivors/          Revised survivor starter infographics
+â”‚   â”œâ”€â”€ tier-guides/        Expanded guides, matched by survivor filename
+â”‚   â”œâ”€â”€ maps/               PNG maps shown on the home page
+â”‚   â””â”€â”€ previews/           Derived artwork used by the featured hero
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ main.tsx            Mounts React and loads the stylesheet
+â”‚   â”œâ”€â”€ App.tsx             Site header/footer and hash-based page routing
+â”‚   â”œâ”€â”€ pages/
+â”‚   â”‚   â”œâ”€â”€ HomePage.tsx     Search, filters, survivor gallery, and maps
+â”‚   â”‚   â”œâ”€â”€ SurvivorPage.tsx Survivor infographic and available tier guide
+â”‚   â”‚   â””â”€â”€ PortalPage.tsx   Sourced portal references
+â”‚   â”œâ”€â”€ components/
+â”‚   â”‚   â”œâ”€â”€ ImageViewer.tsx  Shared full-resolution dialog and zoom controls
+â”‚   â”‚   â”œâ”€â”€ AbilityPanel.tsx Survivor skill selectors and summaries
+â”‚   â”‚   â””â”€â”€ ExternalLink.tsx Accessible links that open in a new tab
+â”‚   â”œâ”€â”€ data/
+â”‚   â”‚   â”œâ”€â”€ assets.ts        Vite image imports and map discovery
+â”‚   â”‚   â”œâ”€â”€ survivors.ts     Survivor metadata, DLC grouping, and supplied tier indexes
+â”‚   â”‚   â”œâ”€â”€ abilities.ts     Survivor loadouts, skill summaries, and alternate choices
+â”‚   â”‚   â”œâ”€â”€ tier-guides/     Generated tier indexes, one JSON per survivor
+â”‚   â”‚   â”œâ”€â”€ portals.ts       Portal route metadata
+â”‚   â”‚   â””â”€â”€ references.ts    Wiki URLs and mechanics corrections
+â”‚   â””â”€â”€ styles/
+â”‚       â””â”€â”€ global.css      Shared design and responsive layouts
+â”œâ”€â”€ docs/image-prompts/     Exact generation prompts, wiki sources, and QA notes
+â”œâ”€â”€ index.html              HTML entry point
+â”œâ”€â”€ vite.config.ts          GitHub Pages base path
+â”œâ”€â”€ tsconfig.json           TypeScript checks
+â”œâ”€â”€ eslint.config.js        JavaScript, TypeScript, and React lint rules
+â”œâ”€â”€ .prettierrc.json         Formatting rules
+â”œâ”€â”€ .prettierignore          Files excluded from formatting
+â”œâ”€â”€ .editorconfig           Editor defaults
+â”œâ”€â”€ package.json            Commands and dependencies
+â”œâ”€â”€ package-lock.json       Reproducible dependency versions
+â”œâ”€â”€ LICENSE                 MIT license for original code and documentation
+â”œâ”€â”€ ASSET_LICENSES.md        Media provenance and third-party rights
+â””â”€â”€ README.md               Setup, architecture, and publishing guide
 ```
 
-The flow is `main.tsx → App.tsx → pages → components + data`. Pages own the screen layout and local interactions. Shared UI lives in components; editable content lives in data. Assets stay in the supplied folders. There is no API, database, or state-management framework.
+The flow is `main.tsx â†’ App.tsx â†’ pages â†’ components + data`. Pages own the screen layout and local interactions. Shared UI lives in components; editable content lives in data. Assets stay in the supplied folders. There is no API, database, or state-management framework.
 
 ## Quality checks
 
@@ -115,9 +115,10 @@ ESLint uses the [recommended typescript-eslint configuration](https://typescript
 
 ## Where to edit
 
-- Add or update a survivor and its item tiers in `src/data/survivors.ts`.
+- Add or update survivor metadata in `src/data/survivors.ts`.
+- Edit the other 19 live HTML tier guides in `src/data/editable-guides/<id>.json`. Names, ratios, descriptions, row headings, and legends are editable; search and field notes follow these files automatically.
 - Edit Drifter's live HTML tier guide in `src/data/drifter-guide.json` (names, badges, descriptions, row headings, and legend). Its field-note index and search items follow this file automatically.
-- Add survivor artwork to `assets/survivors/<id>.png`; use the same filename in `assets/tier-guides/` for an optional guide. Both display separately on the survivor page.
+- Add survivor artwork to `assets/survivors/<id>.png` and matching header artwork to `assets/tier-guides/<id>.png`. Author its live item cards in the corresponding editable-guide JSON file.
 - Add a PNG to `assets/maps/` to include it on the main page automatically.
 - Edit portal routes in `src/data/portals.ts`; edit source URLs and corrections in `src/data/references.ts`.
 - Change layouts in `src/pages/` and reusable UI in `src/components/`.
@@ -129,21 +130,21 @@ Acolyte is a coming-soon block separate from the 20 supplied cards. Playstyle ta
 
 The 17 survivors missing tier-guide images were initially assigned to separate agents, with up to three agents working concurrently. Every supplied survivor has a matching PNG in `assets/tier-guides/`, shown separately from its starter infographic. Subsequent coordinated edits cover all 20 pairs, including Captain, Loader, and Railgunner.
 
-Images were made and revised with the built-in `image_gen` tool. Each tier guide includes four rows (Core Items, Best, Okay, Not Good), a specific build/loadout scope, and an AI-generated/proposed-build disclaimer. The starter summarizes the same Core Items selection. Individual tile borders and category labels indicate game rarity independently of row priority; the editable lookup is `src/data/item-rarities.json`. Mechanics and names were researched; tier placement and generated iconography remain editorial proposals. “Not Good” means lower priority for that particular build.
+Images were made and revised with the built-in `image_gen` tool. Each tier guide includes four rows (Core Items, Best, Okay, Not Good), a specific build/loadout scope, and an AI-generated/proposed-build disclaimer. The starter summarizes the same Core Items selection. Individual tile borders and category labels indicate game rarity independently of row priority; the editable lookup is `src/data/item-rarities.json`. Mechanics and names were researched; tier placement and generated iconography remain editorial proposals. â€œNot Goodâ€ means lower priority for that particular build.
 
-Each generated guide has editable arrays in `src/data/tier-guides/<id>.json`. The site loads these automatically; the original three indexes stay in `src/data/survivors.ts`. [Generation records](docs/image-prompts/README.md) preserve exact prompts, references, sources, reviews, and limitations. [Coordinated revision records](docs/image-prompts/revisions/README.md) document the heading, rarity, and starter-consistency corrections; the [audit report](docs/core-item-audit.md) tracks their results. Historical prompts retain superseded wording for provenance.
+Historical PNG indexes remain in `src/data/tier-guides/<id>.json`, with the original three indexes in `src/data/survivors.ts`. Live HTML guides take precedence for displayed cards, search, and field notes; see [editing instructions](docs/editable-tier-guide.md). [Generation records](docs/image-prompts/README.md) preserve exact prompts, references, sources, reviews, and limitations. [Coordinated revision records](docs/image-prompts/revisions/README.md) document the heading, rarity, and starter-consistency corrections; the [audit report](docs/core-item-audit.md) tracks their results. Historical prompts retain superseded wording for provenance.
 
 ## Accuracy and sources
 
 ### Survivor abilities
 
-Drifter's tier guide is now editable HTML rather than flattened image text. All 16 item cards preserve the approved sketch's names, rarity labels, ratio badges, descriptions, and number legend. Four-column desktop rows become two-column rows on phones. Item cards use locally bundled game icons from a documented wiki-sourced mirror; the header remains AI-generated. Numbers and text are editable separately. The original PNG remains available under **Inspect original infographic**. Other survivors retain their image guides. See [editing instructions](docs/editable-tier-guide.md).
+All 20 tier guides now use editable HTML cards with locally bundled game icons, rarity labels, descriptions, and proposed stack ratios. Drifter preserves its approved sketch; the other 19 retain their existing tier placements with newly authored illustrative ratios. Desktop panels split the viewport equally between guide and loadout, with compact rows for four, five, or six items. Phone layouts stack the panels and use two item columns. The original-image footer control has been removed. Decorative headers remain AI-generated. See [editing instructions](docs/editable-tier-guide.md) for data paths and ratio qualifications.
 
-All 20 survivors have a companion abilities panel beside their tier guide. On desktop it follows scrolling within its guide section; on smaller screens it stacks below the image. Role labels and short summaries make the skills easy to scan. Selectors show common alternate skills; MUL-T has two weapon selections, Captain has two beacon selections, and Void Fiend has a form selector that updates all four transformed skills together. Navigating to another survivor loads that survivor's panel and resets selections.
+All 20 survivors have a companion abilities panel beside their tier guide. The desktop loadout uses a compact grid so the complete reference fits alongside the guide; on phones it stacks below the cards. Role labels and short summaries make the skills easy to scan. Selectors show common alternate skills; MUL-T has two weapon selections, Captain has two beacon selections, and Void Fiend has a form selector that updates all four transformed skills together. Navigating to another survivor loads that survivor's panel and resets selections.
 
 Edit loadouts in `src/data/abilities.ts`; presentation lives in `src/components/AbilityPanel.tsx`. Initial selections follow the illustrated build where its scope specifies skills; otherwise they are reference defaults. Match them to your actual in-game loadout. Selections change the reference, not the image or item rankings. The [ability reference notes](docs/ability-reference.md) document sources and scope. Summaries were checked October 11, 2026 using indexed wiki entries and paraphrased; each panel links to full numbers and unlock conditions. Drifter retains the approved numbered sketch and its proposed ratios.
 
-Artwork is AI-generated, not official item sprites or verified tier lists. The item indexes are transcriptions rather than endorsements. Some icons, mechanics, and recommendations may still be inaccurate. The old False Son starter-only labels were removed during consistency edits; they were not mapped to other items. Collector’s Compulsion was confirmed during Drifter research. Previously identified mechanics corrections appear in the site, and were applied to the revised original three tier guides where relevant.
+Original infographic artwork is AI-generated; live item cards use locally bundled game icons. The guides are proposed builds, not verified tier lists. Some mechanics and recommendations may still be inaccurate. The old False Son starter-only labels were removed during consistency edits; they were not mapped to other items. Collectorâ€™s Compulsion was confirmed during Drifter research. Previously identified mechanics corrections appear in the site, and were applied to the revised original three tier guides where relevant.
 
 Wiki search excerpts were reviewed October 11, 2026; direct wiki page retrieval returned HTTP 403. This limited mechanics review does not certify all item recommendations or rankings.
 

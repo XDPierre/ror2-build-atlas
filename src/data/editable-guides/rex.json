@@ -1,0 +1,134 @@
+{
+  "title": "REX",
+  "subtitle": "Safe DIRECTIVE / Ranged on-hit / Proposed ratios",
+  "intro": "Proposed copy ratios for this loadout.",
+  "rows": [
+    {
+      "title": "Core Items",
+      "summary": "Core priorities for this build.",
+      "color": "#ffd65a",
+      "items": [
+        {
+          "name": "Soldier's Syringe",
+          "badge": "5%",
+          "description": "Increases attack speed."
+        },
+        {
+          "name": "Lens-Maker's Glasses",
+          "badge": "5%",
+          "description": "Increases critical-strike chance."
+        },
+        {
+          "name": "Tri-Tip Dagger",
+          "badge": "5%",
+          "description": "Hits have a chance to apply bleed."
+        },
+        {
+          "name": "AtG Missile Mk. 1",
+          "badge": "1%",
+          "description": "Hits can launch a damaging missile."
+        }
+      ]
+    },
+    {
+      "title": "Best",
+      "summary": "Strong supporting choices.",
+      "color": "#33dfff",
+      "items": [
+        {
+          "name": "Ukulele",
+          "badge": "1%",
+          "description": "Hits can trigger chain lightning."
+        },
+        {
+          "name": "Rejuvenation Rack",
+          "badge": "1%",
+          "description": "Amplifies incoming healing."
+        },
+        {
+          "name": "Hopoo Feather",
+          "badge": "1%",
+          "description": "Adds an extra jump."
+        },
+        {
+          "name": "Paul's Goat Hoof",
+          "badge": "2%",
+          "description": "Increases movement speed."
+        }
+      ]
+    },
+    {
+      "title": "Okay",
+      "summary": "Useful depending on the run.",
+      "color": "#ef6aff",
+      "items": [
+        {
+          "name": "Medkit",
+          "badge": "1%",
+          "description": "Delayed healing after taking damage."
+        },
+        {
+          "name": "Planula",
+          "badge": "1%",
+          "description": "Taking damage restores health."
+        },
+        {
+          "name": "Repulsion Armor Plate",
+          "badge": "1%",
+          "description": "Reduces damage from individual hits."
+        },
+        {
+          "name": "Death Mark",
+          "badge": "1%",
+          "description": "Multiple debuffs make enemies take more damage."
+        }
+      ]
+    },
+    {
+      "title": "Not Good",
+      "summary": "Lower priority here; useful in other builds.",
+      "color": "#ff6262",
+      "items": [
+        {
+          "name": "Razorwire",
+          "badge": "0%",
+          "description": "Taking damage strikes nearby enemies."
+        },
+        {
+          "name": "Bustling Fungus",
+          "badge": "0%",
+          "description": "Standing still creates a healing zone."
+        },
+        {
+          "name": "Focus Crystal",
+          "badge": "0%",
+          "description": "Extra damage against nearby enemies."
+        },
+        {
+          "name": "Transcendence",
+          "badge": "0%",
+          "description": "Converts most health into regenerating shields."
+        }
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "label": "%",
+      "text": "Relative copy weight, NOT an in-game percentage."
+    },
+    {
+      "label": "1% : 5%",
+      "text": "1 copy : 5 copies; weights do not sum to 100."
+    },
+    {
+      "label": "0%",
+      "text": "Do not actively target; still usable if found."
+    }
+  ],
+  "notes": [
+    "Illustrative ratios; respect chance caps and void conversions.",
+    "Tile color = game rarity | Rows = build priority"
+  ],
+  "footer": "Unofficial fan guide | Wiki icons / AI header | Design sketch"
+}

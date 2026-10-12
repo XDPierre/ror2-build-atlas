@@ -37,7 +37,7 @@ export default function AbilityPanel({
         {loadout.slots.map((slot) => {
           const ability = slot.choices[slot.formDependent ? form : (selected[slot.role] ?? 0)];
           return (
-            <article className="ability-card" key={slot.role}>
+            <article className="ability-card" key={slot.role} data-role={slot.role}>
               <p className="ability-role">{slot.role}</p>
               {slot.choices.length > 1 && !slot.formDependent ? (
                 <label>

@@ -1,12 +1,14 @@
 import { useId, type CSSProperties } from 'react';
-import guide from '../data/drifter-guide.json';
+import type { EditableGuide } from '../data/editable-guides';
 import iconSources from '../data/item-icons.json';
 import { asset } from '../data/assets';
 import { itemRarity } from '../data/rarities';
 import { itemWiki } from '../data/references';
 import ExternalLink from './ExternalLink';
 
-const itemIcons = new Map(iconSources.map((icon) => [icon.name, asset(icon.path)]));
+const itemIcons = new Map(
+  iconSources.map((icon) => [icon.name.replaceAll('’', "'"), asset(icon.path)]),
+);
 
 // SVG viewports crop the existing illustration; labels and numbers are live HTML.
 function ArtworkCrop({
@@ -37,9 +39,18 @@ function ArtworkCrop({
   );
 }
 
-export default function EditableTierGuide({ source }: { source: string }) {
+export default function EditableTierGuide({
+  source,
+  guide,
+}: {
+  source: string;
+  guide: EditableGuide;
+}) {
   return (
-    <div className="editable-guide" aria-label="Drifter editable tier guide">
+    <div
+      className={`editable-guide${guide.rows.some((row) => row.items.length > 4) ? ' editable-guide-dense' : ''}`}
+      aria-label={`${guide.title} editable tier guide`}
+    >
       <header className="editable-guide-header">
         <ArtworkCrop source={source} crop={[520, 0, 504, 310]} className="editable-guide-hero" />
         <div>
@@ -59,7 +70,10 @@ export default function EditableTierGuide({ source }: { source: string }) {
             <h3>{row.title}</h3>
             <p>{row.summary}</p>
           </header>
-          <ul className="editable-guide-items">
+          <ul
+            className="editable-guide-items"
+            style={{ '--item-columns': row.items.length } as CSSProperties}
+          >
             {row.items.map((item) => {
               const rarity = itemRarity(item.name);
               return (
@@ -70,7 +84,7 @@ export default function EditableTierGuide({ source }: { source: string }) {
                 >
                   <div className="editable-guide-icon">
                     <img
-                      src={itemIcons.get(item.name)}
+                      src={itemIcons.get(item.name.replaceAll('’', "'"))}
                       alt={`${item.name} game icon`}
                       width="128"
                       height="128"
@@ -78,7 +92,7 @@ export default function EditableTierGuide({ source }: { source: string }) {
                     <span className="editable-guide-rarity">{rarity.rarity}</span>
                     <span
                       className="editable-guide-ratio"
-                      aria-label={`${item.badge}${item.badgeLabel ? ' crit target' : ' relative stack weight'}`}
+                      aria-label={`${item.badge} ${item.badgeLabel ?? 'relative stack weight'}`}
                     >
                       {item.badge}
                       {item.badgeLabel && <small>{item.badgeLabel}</small>}

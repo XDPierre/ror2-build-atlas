@@ -1,0 +1,154 @@
+{
+  "title": "CHEF",
+  "subtitle": "Burn / Close range / Proposed ratios",
+  "intro": "Proposed copy ratios for this loadout.",
+  "rows": [
+    {
+      "title": "Core Items",
+      "summary": "Core priorities for this build.",
+      "color": "#ffd65a",
+      "items": [
+        {
+          "name": "Ignition Tank",
+          "badge": "1%",
+          "description": "Amplifies burn damage."
+        },
+        {
+          "name": "Gasoline",
+          "badge": "3%",
+          "description": "Kills ignite nearby enemies."
+        },
+        {
+          "name": "Focus Crystal",
+          "badge": "3%",
+          "description": "Extra damage against nearby enemies."
+        },
+        {
+          "name": "Backup Magazine",
+          "badge": "1%",
+          "description": "Adds secondary skill charges."
+        },
+        {
+          "name": "Paul's Goat Hoof",
+          "badge": "2%",
+          "description": "Increases movement speed."
+        }
+      ]
+    },
+    {
+      "title": "Best",
+      "summary": "Strong supporting choices.",
+      "color": "#33dfff",
+      "items": [
+        {
+          "name": "Hopoo Feather",
+          "badge": "1%",
+          "description": "Adds an extra jump."
+        },
+        {
+          "name": "Soldier's Syringe",
+          "badge": "2%",
+          "description": "Increases attack speed."
+        },
+        {
+          "name": "Tougher Times",
+          "badge": "2%",
+          "description": "Chance to block incoming damage."
+        },
+        {
+          "name": "Ukulele",
+          "badge": "1%",
+          "description": "Hits can trigger chain lightning."
+        },
+        {
+          "name": "AtG Missile Mk. 1",
+          "badge": "1%",
+          "description": "Hits can launch a damaging missile."
+        }
+      ]
+    },
+    {
+      "title": "Okay",
+      "summary": "Useful depending on the run.",
+      "color": "#ef6aff",
+      "items": [
+        {
+          "name": "Crowbar",
+          "badge": "1%",
+          "description": "Extra damage against high-health targets."
+        },
+        {
+          "name": "Lens-Maker's Glasses",
+          "badge": "1%",
+          "description": "Increases critical-strike chance."
+        },
+        {
+          "name": "Monster Tooth",
+          "badge": "1%",
+          "description": "Kills drop healing pickups."
+        },
+        {
+          "name": "Armor-Piercing Rounds",
+          "badge": "1%",
+          "description": "Extra damage against qualifying bosses."
+        },
+        {
+          "name": "Bandolier",
+          "badge": "1%",
+          "description": "Kills can drop skill-reset pickups."
+        }
+      ]
+    },
+    {
+      "title": "Not Good",
+      "summary": "Lower priority here; useful in other builds.",
+      "color": "#ff6262",
+      "items": [
+        {
+          "name": "Bustling Fungus",
+          "badge": "0%",
+          "description": "Standing still creates a healing zone."
+        },
+        {
+          "name": "Squid Polyp",
+          "badge": "0%",
+          "description": "Interactables summon a temporary turret."
+        },
+        {
+          "name": "Warbanner",
+          "badge": "0%",
+          "description": "Level-ups and teleporter starts create a speed zone."
+        },
+        {
+          "name": "Bison Steak",
+          "badge": "0%",
+          "description": "Adds a small amount of maximum health."
+        },
+        {
+          "name": "Leeching Seed",
+          "badge": "0%",
+          "description": "Damaging hits restore health."
+        }
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "label": "%",
+      "text": "Relative copy weight, NOT an in-game percentage."
+    },
+    {
+      "label": "1% : 5%",
+      "text": "1 copy : 5 copies; weights do not sum to 100."
+    },
+    {
+      "label": "0%",
+      "text": "Do not actively target; still usable if found."
+    }
+  ],
+  "notes": [
+    "Illustrative ratios; respect chance caps and void conversions.",
+    "Tile color = game rarity | Rows = build priority"
+  ],
+  "footer": "Unofficial fan guide | Wiki icons / AI header | Design sketch"
+}

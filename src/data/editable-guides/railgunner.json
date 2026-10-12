@@ -1,0 +1,174 @@
+{
+  "title": "Railgunner",
+  "subtitle": "Precision / Burst / Proposed ratios",
+  "intro": "Proposed copy ratios for this loadout.",
+  "rows": [
+    {
+      "title": "Core Items",
+      "summary": "Core priorities for this build.",
+      "color": "#ffd65a",
+      "items": [
+        {
+          "name": "Crowbar",
+          "badge": "5%",
+          "description": "Extra damage against high-health targets."
+        },
+        {
+          "name": "Runald’s Band",
+          "badge": "1%",
+          "description": "Heavy hits trigger an ice burst; has a cooldown."
+        },
+        {
+          "name": "Kjaro’s Band",
+          "badge": "1%",
+          "description": "Heavy hits trigger a flame burst; has a cooldown."
+        },
+        {
+          "name": "Laser Scope",
+          "badge": "1%",
+          "description": "Increases critical-strike damage."
+        },
+        {
+          "name": "Lens-Maker’s Glasses",
+          "badge": "5%",
+          "description": "Critical chance becomes critical damage."
+        },
+        {
+          "name": "Armor-Piercing Rounds",
+          "badge": "3%",
+          "description": "Extra damage against qualifying bosses."
+        }
+      ]
+    },
+    {
+      "title": "Best",
+      "summary": "Strong supporting choices.",
+      "color": "#33dfff",
+      "items": [
+        {
+          "name": "AtG Missile Mk. 1",
+          "badge": "1%",
+          "description": "Hits can launch a damaging missile."
+        },
+        {
+          "name": "Will-o’-the-wisp",
+          "badge": "1%",
+          "description": "Kills trigger an explosion around the victim."
+        },
+        {
+          "name": "Shatterspleen",
+          "badge": "1%",
+          "description": "Critical hits bleed; bleeding enemies explode on death."
+        },
+        {
+          "name": "Hopoo Feather",
+          "badge": "1%",
+          "description": "Adds an extra jump."
+        },
+        {
+          "name": "Paul’s Goat Hoof",
+          "badge": "2%",
+          "description": "Increases movement speed."
+        },
+        {
+          "name": "Energy Drink",
+          "badge": "2%",
+          "description": "Increases sprint speed."
+        }
+      ]
+    },
+    {
+      "title": "Okay",
+      "summary": "Useful depending on the run.",
+      "color": "#ef6aff",
+      "items": [
+        {
+          "name": "Soldier’s Syringe",
+          "badge": "1%",
+          "description": "Increases attack speed."
+        },
+        {
+          "name": "Predatory Instincts",
+          "badge": "1%",
+          "description": "Critical hits build temporary attack speed."
+        },
+        {
+          "name": "Backup Magazine",
+          "badge": "1%",
+          "description": "Adds secondary skill charges."
+        },
+        {
+          "name": "Ukulele",
+          "badge": "1%",
+          "description": "Hits can trigger chain lightning."
+        },
+        {
+          "name": "Tougher Times",
+          "badge": "1%",
+          "description": "Chance to block incoming damage."
+        },
+        {
+          "name": "Luminous Shot",
+          "badge": "1%",
+          "description": "Secondary uses charge lightning for your primary."
+        }
+      ]
+    },
+    {
+      "title": "Not Good",
+      "summary": "Lower priority here; useful in other builds.",
+      "color": "#ff6262",
+      "items": [
+        {
+          "name": "Bustling Fungus",
+          "badge": "0%",
+          "description": "Standing still creates a healing zone."
+        },
+        {
+          "name": "Leeching Seed",
+          "badge": "0%",
+          "description": "Damaging hits restore health."
+        },
+        {
+          "name": "Focus Crystal",
+          "badge": "0%",
+          "description": "Extra damage against nearby enemies."
+        },
+        {
+          "name": "Hooks of Heresy",
+          "badge": "0%",
+          "description": "Replaces your secondary skill with Slicing Maelstrom."
+        },
+        {
+          "name": "Essence of Heresy",
+          "badge": "0%",
+          "description": "Replaces your special skill with Ruin."
+        },
+        {
+          "name": "Warbanner",
+          "badge": "0%",
+          "description": "Level-ups and teleporter starts create a speed zone."
+        }
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "label": "%",
+      "text": "Relative copy weight, NOT an in-game percentage."
+    },
+    {
+      "label": "1% : 5%",
+      "text": "1 copy : 5 copies; weights do not sum to 100."
+    },
+    {
+      "label": "0%",
+      "text": "Do not actively target; still usable if found."
+    }
+  ],
+  "notes": [
+    "Illustrative ratios; respect chance caps and void conversions.",
+    "Tile color = game rarity | Rows = build priority"
+  ],
+  "footer": "Unofficial fan guide | Wiki icons / AI header | Design sketch"
+}

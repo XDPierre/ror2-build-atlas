@@ -1,0 +1,134 @@
+{
+  "title": "Artificer",
+  "subtitle": "Fire burst / Proposed ratios",
+  "intro": "Proposed copy ratios for this loadout.",
+  "rows": [
+    {
+      "title": "Core Items",
+      "summary": "Core priorities for this build.",
+      "color": "#ffd65a",
+      "items": [
+        {
+          "name": "Ignition Tank",
+          "badge": "1%",
+          "description": "Amplifies burn damage."
+        },
+        {
+          "name": "Kjaro's Band",
+          "badge": "1%",
+          "description": "Heavy hits trigger a flame burst; has a cooldown."
+        },
+        {
+          "name": "Runald's Band",
+          "badge": "1%",
+          "description": "Heavy hits trigger an ice burst; has a cooldown."
+        },
+        {
+          "name": "Backup Magazine",
+          "badge": "1%",
+          "description": "Adds secondary skill charges."
+        }
+      ]
+    },
+    {
+      "title": "Best",
+      "summary": "Strong supporting choices.",
+      "color": "#33dfff",
+      "items": [
+        {
+          "name": "Crowbar",
+          "badge": "2%",
+          "description": "Extra damage against high-health targets."
+        },
+        {
+          "name": "Alien Head",
+          "badge": "1%",
+          "description": "Shortens skill cooldowns."
+        },
+        {
+          "name": "Soldier's Syringe",
+          "badge": "2%",
+          "description": "Increases attack speed."
+        },
+        {
+          "name": "Paul's Goat Hoof",
+          "badge": "2%",
+          "description": "Increases movement speed."
+        }
+      ]
+    },
+    {
+      "title": "Okay",
+      "summary": "Useful depending on the run.",
+      "color": "#ef6aff",
+      "items": [
+        {
+          "name": "Lens-Maker's Glasses",
+          "badge": "1%",
+          "description": "Increases critical-strike chance."
+        },
+        {
+          "name": "Tougher Times",
+          "badge": "1%",
+          "description": "Chance to block incoming damage."
+        },
+        {
+          "name": "Hopoo Feather",
+          "badge": "1%",
+          "description": "Adds an extra jump."
+        },
+        {
+          "name": "Gasoline",
+          "badge": "1%",
+          "description": "Kills ignite nearby enemies."
+        }
+      ]
+    },
+    {
+      "title": "Not Good",
+      "summary": "Lower priority here; useful in other builds.",
+      "color": "#ff6262",
+      "items": [
+        {
+          "name": "Bustling Fungus",
+          "badge": "0%",
+          "description": "Standing still creates a healing zone."
+        },
+        {
+          "name": "Squid Polyp",
+          "badge": "0%",
+          "description": "Interactables summon a temporary turret."
+        },
+        {
+          "name": "Leeching Seed",
+          "badge": "0%",
+          "description": "Damaging hits restore health."
+        },
+        {
+          "name": "Warbanner",
+          "badge": "0%",
+          "description": "Level-ups and teleporter starts create a speed zone."
+        }
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "label": "%",
+      "text": "Relative copy weight, NOT an in-game percentage."
+    },
+    {
+      "label": "1% : 5%",
+      "text": "1 copy : 5 copies; weights do not sum to 100."
+    },
+    {
+      "label": "0%",
+      "text": "Do not actively target; still usable if found."
+    }
+  ],
+  "notes": [
+    "Illustrative ratios; respect chance caps and void conversions.",
+    "Tile color = game rarity | Rows = build priority"
+  ],
+  "footer": "Unofficial fan guide | Wiki icons / AI header | Design sketch"
+}

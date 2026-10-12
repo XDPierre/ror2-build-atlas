@@ -1,0 +1,134 @@
+{
+  "title": "Mercenary",
+  "subtitle": "Melee / Cooldown / Proposed ratios",
+  "intro": "Proposed copy ratios for this loadout.",
+  "rows": [
+    {
+      "title": "Core Items",
+      "summary": "Core priorities for this build.",
+      "color": "#ffd65a",
+      "items": [
+        {
+          "name": "Focus Crystal",
+          "badge": "3%",
+          "description": "Extra damage against nearby enemies."
+        },
+        {
+          "name": "Alien Head",
+          "badge": "1%",
+          "description": "Shortens skill cooldowns."
+        },
+        {
+          "name": "Lysate Cell",
+          "badge": "1%",
+          "description": "Adds special charges; corrupts Fuel Cells."
+        },
+        {
+          "name": "Hardlight Afterburner",
+          "badge": "1%",
+          "description": "Adds utility charges and reduces cooldown."
+        }
+      ]
+    },
+    {
+      "title": "Best",
+      "summary": "Strong supporting choices.",
+      "color": "#33dfff",
+      "items": [
+        {
+          "name": "Soldier's Syringe",
+          "badge": "2%",
+          "description": "Increases attack speed."
+        },
+        {
+          "name": "Backup Magazine",
+          "badge": "2%",
+          "description": "Adds secondary skill charges."
+        },
+        {
+          "name": "Paul's Goat Hoof",
+          "badge": "2%",
+          "description": "Increases movement speed."
+        },
+        {
+          "name": "Bandolier",
+          "badge": "1%",
+          "description": "Kills can drop skill-reset pickups."
+        }
+      ]
+    },
+    {
+      "title": "Okay",
+      "summary": "Useful depending on the run.",
+      "color": "#ef6aff",
+      "items": [
+        {
+          "name": "Runald's Band",
+          "badge": "1%",
+          "description": "Heavy hits trigger an ice burst; has a cooldown."
+        },
+        {
+          "name": "Ukulele",
+          "badge": "1%",
+          "description": "Hits can trigger chain lightning."
+        },
+        {
+          "name": "Tougher Times",
+          "badge": "1%",
+          "description": "Chance to block incoming damage."
+        },
+        {
+          "name": "Hopoo Feather",
+          "badge": "1%",
+          "description": "Adds an extra jump."
+        }
+      ]
+    },
+    {
+      "title": "Not Good",
+      "summary": "Lower priority here; useful in other builds.",
+      "color": "#ff6262",
+      "items": [
+        {
+          "name": "Bustling Fungus",
+          "badge": "0%",
+          "description": "Standing still creates a healing zone."
+        },
+        {
+          "name": "Squid Polyp",
+          "badge": "0%",
+          "description": "Interactables summon a temporary turret."
+        },
+        {
+          "name": "Bison Steak",
+          "badge": "0%",
+          "description": "Adds a small amount of maximum health."
+        },
+        {
+          "name": "Light Flux Pauldron",
+          "badge": "0%",
+          "description": "Shorter skill cooldowns at the cost of attack speed."
+        }
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "label": "%",
+      "text": "Relative copy weight, NOT an in-game percentage."
+    },
+    {
+      "label": "1% : 5%",
+      "text": "1 copy : 5 copies; weights do not sum to 100."
+    },
+    {
+      "label": "0%",
+      "text": "Do not actively target; still usable if found."
+    }
+  ],
+  "notes": [
+    "Illustrative ratios; respect chance caps and void conversions.",
+    "Tile color = game rarity | Rows = build priority"
+  ],
+  "footer": "Unofficial fan guide | Wiki icons / AI header | Design sketch"
+}

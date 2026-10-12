@@ -1,0 +1,134 @@
+{
+  "title": "Void Fiend",
+  "subtitle": "Corruption / On-hit / Proposed ratios",
+  "intro": "Proposed copy ratios for this loadout.",
+  "rows": [
+    {
+      "title": "Core Items",
+      "summary": "Core priorities for this build.",
+      "color": "#ffd65a",
+      "items": [
+        {
+          "name": "Lens-Maker's Glasses",
+          "badge": "5%",
+          "description": "Increases critical-strike chance."
+        },
+        {
+          "name": "Soldier's Syringe",
+          "badge": "5%",
+          "description": "Increases attack speed."
+        },
+        {
+          "name": "Polylute",
+          "badge": "1%",
+          "description": "Repeated lightning on one target; replaces Ukulele."
+        },
+        {
+          "name": "Plasma Shrimp",
+          "badge": "1%",
+          "description": "Shielded hits fire missiles; replaces AtG."
+        }
+      ]
+    },
+    {
+      "title": "Best",
+      "summary": "Strong supporting choices.",
+      "color": "#33dfff",
+      "items": [
+        {
+          "name": "Safer Spaces",
+          "badge": "1%",
+          "description": "Periodically blocks a hit; replaces Tougher Times."
+        },
+        {
+          "name": "Cautious Slug",
+          "badge": "2%",
+          "description": "Improves recovery outside combat."
+        },
+        {
+          "name": "Predatory Instincts",
+          "badge": "1%",
+          "description": "Critical hits build temporary attack speed."
+        },
+        {
+          "name": "Hopoo Feather",
+          "badge": "1%",
+          "description": "Adds an extra jump."
+        }
+      ]
+    },
+    {
+      "title": "Okay",
+      "summary": "Useful depending on the run.",
+      "color": "#ef6aff",
+      "items": [
+        {
+          "name": "Backup Magazine",
+          "badge": "1%",
+          "description": "Adds secondary skill charges."
+        },
+        {
+          "name": "Focus Crystal",
+          "badge": "1%",
+          "description": "Extra damage against nearby enemies."
+        },
+        {
+          "name": "Armor-Piercing Rounds",
+          "badge": "1%",
+          "description": "Extra damage against qualifying bosses."
+        },
+        {
+          "name": "Topaz Brooch",
+          "badge": "1%",
+          "description": "Kills grant temporary barrier."
+        }
+      ]
+    },
+    {
+      "title": "Not Good",
+      "summary": "Lower priority here; useful in other builds.",
+      "color": "#ff6262",
+      "items": [
+        {
+          "name": "Weeping Fungus",
+          "badge": "0%",
+          "description": "Sprinting heals; replaces Bustling Fungus."
+        },
+        {
+          "name": "Leeching Seed",
+          "badge": "0%",
+          "description": "Damaging hits restore health."
+        },
+        {
+          "name": "Bustling Fungus",
+          "badge": "0%",
+          "description": "Standing still creates a healing zone."
+        },
+        {
+          "name": "Purity",
+          "badge": "0%",
+          "description": "Shorter skill cooldowns with worse luck."
+        }
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "label": "%",
+      "text": "Relative copy weight, NOT an in-game percentage."
+    },
+    {
+      "label": "1% : 5%",
+      "text": "1 copy : 5 copies; weights do not sum to 100."
+    },
+    {
+      "label": "0%",
+      "text": "Do not actively target; still usable if found."
+    }
+  ],
+  "notes": [
+    "Illustrative ratios; respect chance caps and void conversions.",
+    "Tile color = game rarity | Rows = build priority"
+  ],
+  "footer": "Unofficial fan guide | Wiki icons / AI header | Design sketch"
+}

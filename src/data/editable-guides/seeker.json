@@ -1,0 +1,134 @@
+{
+  "title": "Seeker",
+  "subtitle": "Sustained damage / Barrier / Proposed ratios",
+  "intro": "Proposed copy ratios for this loadout.",
+  "rows": [
+    {
+      "title": "Core Items",
+      "summary": "Core priorities for this build.",
+      "color": "#ffd65a",
+      "items": [
+        {
+          "name": "Backup Magazine",
+          "badge": "1%",
+          "description": "Adds secondary skill charges."
+        },
+        {
+          "name": "Focus Crystal",
+          "badge": "3%",
+          "description": "Extra damage against nearby enemies."
+        },
+        {
+          "name": "AtG Missile Mk. 1",
+          "badge": "1%",
+          "description": "Hits can launch a damaging missile."
+        },
+        {
+          "name": "Ukulele",
+          "badge": "1%",
+          "description": "Hits can trigger chain lightning."
+        }
+      ]
+    },
+    {
+      "title": "Best",
+      "summary": "Strong supporting choices.",
+      "color": "#33dfff",
+      "items": [
+        {
+          "name": "Soldier's Syringe",
+          "badge": "2%",
+          "description": "Increases attack speed."
+        },
+        {
+          "name": "Lens-Maker's Glasses",
+          "badge": "2%",
+          "description": "Increases critical-strike chance."
+        },
+        {
+          "name": "Hopoo Feather",
+          "badge": "1%",
+          "description": "Adds an extra jump."
+        },
+        {
+          "name": "57 Leaf Clover",
+          "badge": "1%",
+          "description": "Improves rolls for chance-based effects."
+        }
+      ]
+    },
+    {
+      "title": "Okay",
+      "summary": "Useful depending on the run.",
+      "color": "#ef6aff",
+      "items": [
+        {
+          "name": "Topaz Brooch",
+          "badge": "1%",
+          "description": "Kills grant temporary barrier."
+        },
+        {
+          "name": "Rejuvenation Rack",
+          "badge": "1%",
+          "description": "Amplifies incoming healing."
+        },
+        {
+          "name": "Tougher Times",
+          "badge": "1%",
+          "description": "Chance to block incoming damage."
+        },
+        {
+          "name": "Medkit",
+          "badge": "1%",
+          "description": "Delayed healing after taking damage."
+        }
+      ]
+    },
+    {
+      "title": "Not Good",
+      "summary": "Lower priority here; useful in other builds.",
+      "color": "#ff6262",
+      "items": [
+        {
+          "name": "Bustling Fungus",
+          "badge": "0%",
+          "description": "Standing still creates a healing zone."
+        },
+        {
+          "name": "Squid Polyp",
+          "badge": "0%",
+          "description": "Interactables summon a temporary turret."
+        },
+        {
+          "name": "Hooks of Heresy",
+          "badge": "0%",
+          "description": "Replaces your secondary skill with Slicing Maelstrom."
+        },
+        {
+          "name": "Essence of Heresy",
+          "badge": "0%",
+          "description": "Replaces your special skill with Ruin."
+        }
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "label": "%",
+      "text": "Relative copy weight, NOT an in-game percentage."
+    },
+    {
+      "label": "1% : 5%",
+      "text": "1 copy : 5 copies; weights do not sum to 100."
+    },
+    {
+      "label": "0%",
+      "text": "Do not actively target; still usable if found."
+    }
+  ],
+  "notes": [
+    "Illustrative ratios; respect chance caps and void conversions.",
+    "Tile color = game rarity | Rows = build priority"
+  ],
+  "footer": "Unofficial fan guide | Wiki icons / AI header | Design sketch"
+}

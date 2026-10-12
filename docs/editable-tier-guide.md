@@ -1,34 +1,40 @@
-# Editable Drifter tier guide
+﻿# Editable survivor tier guides
 
-Drifter's detail page renders its approved stack-planning sketch as HTML cards alongside the existing abilities panel. The four priority rows, 16 items, rarity labels, badges, item descriptions, introductory text, and number legend are preserved. Item cards use real game icons bundled locally from a documented wiki-sourced mirror. The header illustration remains a cropped view of the AI-generated PNG. The PNG is unchanged and can still be inspected in the expandable original-image section.
+All 20 survivor pages use the same HTML guide and loadout layout. Drifter retains its approved 16-item sketch. The other 19 guides preserve their existing item order and tier placements, with editable descriptions and newly authored proposed copy ratios. These ratios are design suggestions, not verified optimal quantities or values transcribed from the old PNGs.
 
 ## Edit content
 
-Change `src/data/drifter-guide.json`. No image regeneration is needed for text changes.
+- Drifter: `src/data/drifter-guide.json`.
+- Other survivors: `src/data/editable-guides/<id>.json`.
+- Registry and schema: `src/data/editable-guides.ts`.
+- Ability choices and summaries: `src/data/abilities.ts`.
 
-- `title`, `subtitle`, `intro`: heading and build introduction.
-- `rows`: priority groups with a title, explanation, and accent color.
-- `items`: each item's `name`, `badge`, optional `badgeLabel`, and brief `description`.
-- `legend`, `notes`, `footer`: number explanation, qualifications, and attribution.
+Each guide contains `title`, `subtitle`, `intro`, four `rows`, and `legend`, `notes`, and `footer`. Each item has its exact `name`, `badge`, optional `badgeLabel`, and brief `description`. All labels, ratios, and explanations are live text; no image regeneration is needed.
 
-For example, edit an item's `badge` from `"1%"` to `"2%"` to change its displayed proposed ratio. A plain badge such as `"10"` is a conditional acquisition target, not a universal item cap. Retain the legend: `%` means relative copy weight, not a game percentage; weights do not sum to 100. The 1:5 illustration means one copy of one item per five copies of another. Ratios remain proposals, not tested optimal quantities.
+The live guide also controls its survivor's search and field-note index through `src/data/survivors.ts`. Historical arrays in `src/data/tier-guides/` and the original three inline indexes remain as PNG provenance; the live guide takes precedence. Preserve the four tier names: Core Items, Best, Okay, Not Good.
 
-The Drifter search and field-note item indexes derive from this same file in `src/data/survivors.ts`. The older `src/data/tier-guides/drifter.json` is retained as the historical PNG index; its values no longer control Drifter's live index. Game rarity colors and names come from `src/data/item-rarities.json`, independently of priority-row accents. Add a rarity entry there if adding an unfamiliar item.
+## Proposed ratios
 
-Item icons live in `assets/items/`. Update `src/data/item-icons.json` to map an exact item name to its local asset path and record its source. The manifest pins the mirror revision and records file hashes; see [asset provenance](../ASSET_LICENSES.md). Icons use `object-fit: contain`, so the whole item remains visible. They are 72px high on desktop and 48px on shorter desktop screens, with rarity and ratio badges overlaid. The header's SVG crop uses coordinates on the 1024 × 1536 original image.
+A percentage badge means relative copy weight, not an in-game percentage. `1% : 5%` means one copy of one item for five copies of another; weights do not sum to 100. `0%` means lower targeting priority for this build, not an unusable item.
+
+For the 19 new sketches, selected core commons such as Syringe, Dagger, Glasses, Crowbar, and Engineer's Fungus start at weight 5; Focus Crystal, Gasoline, and Armor-Piercing Rounds start at 3; Goat Hoof starts at 2. Other core items start at 1. Best-row commons start at 2; other Best and Okay items start at 1. Not Good starts at 0. These are editable starting points for each supplied build, not a universal stacking formula. Drifter's approved ratios are preserved.
+
+Respect effect caps and loadout-specific interactions instead of extending a ratio indefinitely. Railgunner converts critical chance into damage, while other survivors must account for their actual total critical chance. Void items replace their normal counterparts. Equipment badges marked `equip` indicate one equipped item, not repeated equipment stacks.
+
+## Icons and artwork
+
+`assets/items/` holds 72 unique locally bundled item icons. `src/data/item-icons.json` records exact names, pinned download URLs, source revision, wiki links, and SHA-256 hashes. Curly apostrophes are normalized when resolving icons and rarities. `src/data/item-rarities.json` controls rarity labels and borders independently of row priority.
+
+Icons are displayed with `object-fit: contain`; rarity and ratio badges stay within their icon frames. The decorative header crops the existing AI-generated tier image. Original survivor and tier PNGs are preserved as source artwork; the original-image inspector has been removed from the live guide. See [asset provenance](../ASSET_LICENSES.md).
+
+Short descriptions are authored summaries. The mirror's item metadata informed the reference review; [Luminous Shot](https://riskofrain2.wiki.gg/wiki/Luminous_Shot) and [Box of Dynamite](https://riskofrain2.wiki.gg/wiki/Box_of_Dynamite) were additionally checked against indexed wiki entries on October 12, 2026. This conversion preserves editorial tier placement and does not certify every recommendation.
 
 ## Presentation
 
-- `src/components/EditableTierGuide.tsx`: live headings, item cards, badges, wiki links, legend, and original-image inspector.
-- `src/pages/SurvivorPage.tsx`: Drifter uses the HTML guide; other survivors use their existing images.
-- `src/styles/global.css`: four cards per row on desktop, two on narrow phones, readable descriptions, rarity borders, and ratio badges.
+`src/components/EditableTierGuide.tsx` renders every survivor's guide. At desktop widths of 1100px and above, the guide and loadout share equal columns across the viewport. Rows keep all four, five, or six items together; denser guides use smaller icons on short screens. Passive and trait cards span both loadout columns, while active skills and Captain's beacon choices form a compact grid. All loadout selectors remain functional, including MUL-T's weapons and Void Fiend's forms.
 
-The abilities panel stays beside the guide on desktop and below it on mobile. Existing survivor navigation resets the panel to the current survivor.
-
-The compact desktop view overlays rarity and ratio badges directly on the artwork. Shorter desktop screens use smaller icons and a condensed header. **How to read the numbers** is a slim strip with its title and attribution on the left and the full legend in compact lines on the right. All item descriptions and legend qualifications remain visible. Phone layouts keep larger text and two card columns; the legend stacks into one column, with normal page scrolling.
-
-This conversion transcribes the approved sketch; it does not introduce new mechanics or validate its rankings. Source and stacking qualifications remain in [the sketch record](image-prompts/drifter-stack-sketch.md).
+On phones the panels stack, item rows use two columns, and normal page scrolling preserves readable text. Intermediate widths retain the responsive layout. Layout rules live in `src/styles/global.css`.
 
 ## Validation
 
-Lint, formatting, TypeScript, and production build checks passed. DOM checks matched all 16 card names, ratios, descriptions, and real-icon references, and verified the four rows, rarity labels, legend, synchronized field notes, survivor navigation, and original-image dialog. The original PNG remains byte-identical to the approved sketch. Headless Chrome confirmed all 16 local icons loaded at desktop, laptop, and phone widths. The larger-icon guide fits within the tested 1514 × 949 and 1366 × 768 desktop/laptop viewports, with no horizontal overflow. Phone cards use two columns and normal scrolling. Screenshots were visually inspected; real touch interaction is not covered by these checks.
+Production build, content checks, and headless browser checks cover all 20 routes. Content checks compare original tier membership and order, names, ratios, descriptions, field-note indexes, selectors, and all 72 icon hashes. Browser checks cover 1514 x 949, 1366 x 768, 1280 x 720, and 390 x 900 viewports, including alternate loadout selections, loaded icons, containment, equal desktop widths, and horizontal overflow. Desktop and laptop panels fit together when the tier section is brought into view. Mobile pages scroll normally. Screenshots of representative dense and specialized guides were inspected; real touch interaction is outside these checks.

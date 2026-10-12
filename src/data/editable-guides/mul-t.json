@@ -1,0 +1,134 @@
+{
+  "title": "MUL-T",
+  "subtitle": "Nailgun / On-hit / Proposed ratios",
+  "intro": "Proposed copy ratios for this loadout.",
+  "rows": [
+    {
+      "title": "Core Items",
+      "summary": "Core priorities for this build.",
+      "color": "#ffd65a",
+      "items": [
+        {
+          "name": "Soldier's Syringe",
+          "badge": "5%",
+          "description": "Increases attack speed."
+        },
+        {
+          "name": "Tri-Tip Dagger",
+          "badge": "5%",
+          "description": "Hits have a chance to apply bleed."
+        },
+        {
+          "name": "AtG Missile Mk. 1",
+          "badge": "1%",
+          "description": "Hits can launch a damaging missile."
+        },
+        {
+          "name": "Ukulele",
+          "badge": "1%",
+          "description": "Hits can trigger chain lightning."
+        }
+      ]
+    },
+    {
+      "title": "Best",
+      "summary": "Strong supporting choices.",
+      "color": "#33dfff",
+      "items": [
+        {
+          "name": "Lens-Maker's Glasses",
+          "badge": "2%",
+          "description": "Increases critical-strike chance."
+        },
+        {
+          "name": "Paul's Goat Hoof",
+          "badge": "2%",
+          "description": "Increases movement speed."
+        },
+        {
+          "name": "Hopoo Feather",
+          "badge": "1%",
+          "description": "Adds an extra jump."
+        },
+        {
+          "name": "57 Leaf Clover",
+          "badge": "1%",
+          "description": "Improves rolls for chance-based effects."
+        }
+      ]
+    },
+    {
+      "title": "Okay",
+      "summary": "Useful depending on the run.",
+      "color": "#ef6aff",
+      "items": [
+        {
+          "name": "Leeching Seed",
+          "badge": "1%",
+          "description": "Damaging hits restore health."
+        },
+        {
+          "name": "Tougher Times",
+          "badge": "1%",
+          "description": "Chance to block incoming damage."
+        },
+        {
+          "name": "Armor-Piercing Rounds",
+          "badge": "1%",
+          "description": "Extra damage against qualifying bosses."
+        },
+        {
+          "name": "Gasoline",
+          "badge": "1%",
+          "description": "Kills ignite nearby enemies."
+        }
+      ]
+    },
+    {
+      "title": "Not Good",
+      "summary": "Lower priority here; useful in other builds.",
+      "color": "#ff6262",
+      "items": [
+        {
+          "name": "Bustling Fungus",
+          "badge": "0%",
+          "description": "Standing still creates a healing zone."
+        },
+        {
+          "name": "Crowbar",
+          "badge": "0%",
+          "description": "Extra damage against high-health targets."
+        },
+        {
+          "name": "Purity",
+          "badge": "0%",
+          "description": "Shorter skill cooldowns with worse luck."
+        },
+        {
+          "name": "Stone Flux Pauldron",
+          "badge": "0%",
+          "description": "More maximum health at the cost of movement speed."
+        }
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "label": "%",
+      "text": "Relative copy weight, NOT an in-game percentage."
+    },
+    {
+      "label": "1% : 5%",
+      "text": "1 copy : 5 copies; weights do not sum to 100."
+    },
+    {
+      "label": "0%",
+      "text": "Do not actively target; still usable if found."
+    }
+  ],
+  "notes": [
+    "Illustrative ratios; respect chance caps and void conversions.",
+    "Tile color = game rarity | Rows = build priority"
+  ],
+  "footer": "Unofficial fan guide | Wiki icons / AI header | Design sketch"
+}

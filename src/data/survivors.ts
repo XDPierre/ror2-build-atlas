@@ -1,5 +1,5 @@
 import { asset } from './assets';
-import drifterGuide from './drifter-guide.json';
+import { editableGuides } from './editable-guides';
 export const dlcs = [
   'Base game',
   'Survivors of the Void',
@@ -315,10 +315,12 @@ for (const [path, guide] of Object.entries(generatedTierFiles)) {
   const id = path.split('/').pop()!.replace('.json', '');
   if (!tiers[id]) tiers[id] = guide;
 }
-// The live Drifter guide is also the source for its search and field-note indexes.
-tiers.drifter = Object.fromEntries(
-  drifterGuide.rows.map((row) => [row.title, row.items.map((item) => item.name)]),
-) as Record<Tier, string[]>;
+// Live guides also drive search and field-note indexes.
+for (const [id, guide] of Object.entries(editableGuides)) {
+  tiers[id] = Object.fromEntries(
+    guide.rows.map((row) => [row.title, row.items.map((item) => item.name)]),
+  ) as Record<Tier, string[]>;
+}
 export const survivors: Survivor[] = rows.map(([id, name, group, style, tags, items]) => ({
   id,
   name,
