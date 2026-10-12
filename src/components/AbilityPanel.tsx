@@ -11,18 +11,35 @@ export default function AbilityPanel({
   loadout: SurvivorLoadout;
 }) {
   const [selected, setSelected] = useState<Record<string, number>>({});
+  const [form, setForm] = useState(0);
   return (
     <aside className="ability-panel" aria-label={`${survivorName} abilities`}>
       <p className="eyebrow">LOADOUT / QUICK REFERENCE</p>
       <h2>{survivorName} abilities</h2>
       <p className="ability-context">{loadout.context}</p>
+      {loadout.forms && (
+        <label className="ability-form">
+          <span className="ability-role">Form</span>
+          <select
+            aria-label={`${survivorName} form`}
+            value={form}
+            onChange={(e) => setForm(Number(e.target.value))}
+          >
+            {loadout.forms.map((name, i) => (
+              <option key={name} value={i}>
+                {name}
+              </option>
+            ))}
+          </select>
+        </label>
+      )}
       <div className="ability-slots">
         {loadout.slots.map((slot) => {
-          const ability = slot.choices[selected[slot.role] ?? 0];
+          const ability = slot.choices[slot.formDependent ? form : (selected[slot.role] ?? 0)];
           return (
             <article className="ability-card" key={slot.role}>
               <p className="ability-role">{slot.role}</p>
-              {slot.choices.length > 1 ? (
+              {slot.choices.length > 1 && !slot.formDependent ? (
                 <label>
                   <span className="sr-only">
                     {survivorName} {slot.role} ability
@@ -55,8 +72,8 @@ export default function AbilityPanel({
           Full skills, numbers & unlocks
         </ExternalLink>
         <br />
-        Wiki summaries checked October 11, 2026. Selecting a skill updates this reference; item
-        ratios remain the proposed sketch.
+        Wiki summaries checked October 11, 2026. Match selections to your in-game loadout. This
+        reference includes common variants; selections do not change infographic rankings.
       </p>
     </aside>
   );

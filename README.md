@@ -36,10 +36,12 @@ ror2-build-atlas/
 │   │   └── PortalPage.tsx   Sourced portal references
 │   ├── components/
 │   │   ├── ImageViewer.tsx  Shared full-resolution dialog and zoom controls
+│   │   ├── AbilityPanel.tsx Survivor skill selectors and summaries
 │   │   └── ExternalLink.tsx Accessible links that open in a new tab
 │   ├── data/
 │   │   ├── assets.ts        Vite image imports and map discovery
 │   │   ├── survivors.ts     Survivor metadata, DLC grouping, and supplied tier indexes
+│   │   ├── abilities.ts     Survivor loadouts, skill summaries, and alternate choices
 │   │   ├── tier-guides/     Generated tier indexes, one JSON per survivor
 │   │   ├── portals.ts       Portal route metadata
 │   │   └── references.ts    Wiki URLs and mechanics corrections
@@ -94,11 +96,11 @@ Each generated guide has editable arrays in `src/data/tier-guides/<id>.json`. Th
 
 ## Accuracy and sources
 
-### Drifter preview
+### Survivor abilities
 
-Drifter uses the approved numbered tier guide and a companion abilities panel. On desktop the panel sits beside the guide and stays within that guide's scroll area; on smaller screens it stacks below the image. The default loadout is Blunt Force, Cleanup, Repossess, and Salvage. Selectors show alternate Secondary, Utility, and Special summaries. Selections change the quick reference, not the guide's proposed item ratios. The panel is keyed to the current survivor, so it cannot follow navigation to a different survivor accidentally.
+All 20 survivors have a companion abilities panel beside their tier guide. On desktop it follows scrolling within its guide section; on smaller screens it stacks below the image. Role labels and short summaries make the skills easy to scan. Selectors show common alternate skills; MUL-T has two weapon selections, Captain has two beacon selections, and Void Fiend has a form selector that updates all four transformed skills together. Navigating to another survivor loads that survivor's panel and resets selections.
 
-This is the first survivor preview. Add later loadouts in `src/data/abilities.ts`; presentation lives in `src/components/AbilityPanel.tsx`. [Drifter's skills](https://riskofrain2.wiki.gg/wiki/Drifter#Skills) and the [skill database](https://riskofrain2.wiki.gg/wiki/Module:Skills/Data) were checked October 11, 2026 using indexed wiki entries. Summaries are paraphrased; the source link includes full numbers and unlock conditions.
+Edit loadouts in `src/data/abilities.ts`; presentation lives in `src/components/AbilityPanel.tsx`. Initial selections follow the illustrated build where its scope specifies skills; otherwise they are reference defaults. Match them to your actual in-game loadout. Selections change the reference, not the image or item rankings. The [ability reference notes](docs/ability-reference.md) document sources and scope. Summaries were checked October 11, 2026 using indexed wiki entries and paraphrased; each panel links to full numbers and unlock conditions. Drifter retains the approved numbered sketch and its proposed ratios.
 
 Artwork is AI-generated, not official item sprites or verified tier lists. The item indexes are transcriptions rather than endorsements. Some icons, mechanics, and recommendations may still be inaccurate. The old False Son starter-only labels were removed during consistency edits; they were not mapped to other items. Collector’s Compulsion was confirmed during Drifter research. Previously identified mechanics corrections appear in the site, and were applied to the revised original three tier guides where relevant.
 

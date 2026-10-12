@@ -131,7 +131,7 @@ export default function SurvivorPage({ survivor: s }: { survivor: Survivor }) {
       {s.tierImage && loadout && (
         <section
           id="tier-guide"
-          className="available-tier-guide tier-guide-pilot"
+          className="available-tier-guide tier-guide-with-abilities"
           aria-label={`${s.name} tier guide and abilities`}
         >
           <p className="eyebrow">AVAILABLE TIER GUIDE</p>
