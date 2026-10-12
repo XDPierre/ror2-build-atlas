@@ -69,10 +69,18 @@ ror2-build-atlas/
 ├── .editorconfig           Editor defaults
 ├── package.json            Commands and dependencies
 ├── package-lock.json       Reproducible dependency versions
+├── LICENSE                 MIT license for original code and documentation
+├── ASSET_LICENSES.md        Media provenance and third-party rights
 └── README.md               Setup, architecture, and publishing guide
 ```
 
 The flow is `main.tsx → App.tsx → pages → components + data`. Pages own the screen layout and local interactions. Shared UI lives in components; editable content lives in data. Assets stay in the supplied folders. There is no API, database, or state-management framework.
+
+## Code ownership and reviews
+
+[`.github/CODEOWNERS`](.github/CODEOWNERS) assigns `@XDPierre` as code owner for every file, including assets, documentation, configuration, and the ownership file itself. GitHub automatically requests your review on non-draft pull requests targeting a branch that contains this file. Draft pull requests request review when marked ready. This routes review requests without changing commit authorship or preventing other people from reviewing.
+
+To make code-owner approval mandatory before merging, enable **Require review from Code Owners** in the branch protection rule or ruleset for the default branch. Repository settings have not been changed. The ownership rule becomes active after this file is published to the pull request's base branch; nothing has been pushed by Codex. See [GitHub's code owners documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
 
 ## Quality checks
 
@@ -126,6 +134,14 @@ Portal references:
 Other map arrows remain unverified. The HTML routes are a partial reference and omit newer expansion routes. Expansion grouping sources: [Alloyed Collective update](https://riskofrain2.wiki.gg/wiki/Alloyed_Collective_Update), [Hallowed Concepts](https://riskofrain2.wiki.gg/wiki/Hallowed_Concepts).
 
 Risk of Rain 2 belongs to its respective owners. This fan project is not affiliated with or endorsed by Hopoo Games, Gearbox, or 2K.
+
+## License
+
+The project's original source code, configuration, authored metadata, and documentation (including generation prompts) are licensed under the [MIT License](LICENSE), to the extent the project contributors hold the relevant rights. MIT permits reuse, modification, redistribution, and commercial use while requiring preservation of the copyright and license notices. It provides no warranty. This is a permissive license, not a requirement that forks remain open source. See the [MIT summary](https://choosealicense.com/licenses/mit/).
+
+Image files under `assets/` are excluded from this MIT grant; see [ASSET_LICENSES.md](ASSET_LICENSES.md) for the media inventory, provenance, and rights notices. Risk of Rain 2 characters, names, logos, and other third-party material remain subject to their owners' rights. The license does not grant trademark rights or permission from the game owners. Dependencies and fonts retain their own licenses. Linked or quoted wiki material is not relicensed by this project.
+
+MIT makes sense for this site's code and associated documentation. A blanket MIT label for the illustrated game assets would imply rights the project has not established. AI-generated provenance and fan-made attribution do not establish rights clearance.
 
 ## Validation
 

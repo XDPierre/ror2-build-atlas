@@ -2,7 +2,8 @@ node_modules/
 dist/
 .tools/
 .qa/
-assets/
+assets/**
+!assets/README.md
 package-lock.json
 *.tsbuildinfo
 asset-contact-sheet.jpg
