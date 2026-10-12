@@ -62,12 +62,6 @@ ror2-build-atlas/
 
 The flow is `main.tsx → App.tsx → pages → components + data`. Pages own the screen layout and local interactions. Shared UI lives in components; editable content lives in data. Assets stay in the supplied folders. There is no API, database, or state-management framework.
 
-## Code ownership and reviews
-
-[`.github/CODEOWNERS`](.github/CODEOWNERS) assigns `@XDPierre` as code owner for every file, including assets, documentation, configuration, and the ownership file itself. GitHub automatically requests your review on non-draft pull requests targeting a branch that contains this file. Draft pull requests request review when marked ready. This routes review requests without changing commit authorship or preventing other people from reviewing.
-
-To make code-owner approval mandatory before merging, enable **Require review from Code Owners** in the branch protection rule or ruleset for the default branch. Repository settings have not been changed. The ownership rule becomes active after this file is published to the pull request's base branch; nothing has been pushed by Codex. See [GitHub's code owners documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
-
 ## Quality checks
 
 ```sh
