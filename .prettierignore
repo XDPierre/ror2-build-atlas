@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.tools/
+.qa/
+assets/
+package-lock.json
+*.tsbuildinfo
+asset-contact-sheet.jpg
+README_FOR_CODEX.md

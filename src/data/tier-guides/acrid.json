@@ -1,0 +1,30 @@
+{
+  "Optimal": [
+    "Gasoline",
+    "Will-o'-the-wisp",
+    "Paul's Goat Hoof",
+    "Hopoo Feather",
+    "Backup Magazine"
+  ],
+  "Best": [
+    "Ukulele",
+    "AtG Missile Mk. 1",
+    "Tri-Tip Dagger",
+    "Tougher Times",
+    "Safer Spaces"
+  ],
+  "Okay": [
+    "Crowbar",
+    "Focus Crystal",
+    "Soldier's Syringe",
+    "Lens-Maker's Glasses",
+    "Monster Tooth"
+  ],
+  "Not Good": [
+    "Bustling Fungus",
+    "Squid Polyp",
+    "Warbanner",
+    "Leeching Seed",
+    "Predatory Instincts"
+  ]
+}
