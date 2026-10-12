@@ -6,7 +6,7 @@ Each missing survivor guide was created by a separate agent using the built-in i
 
 The images contain proposed build-specific priorities, not certified universal rankings. Item illustrations are generated, not official sprites. Mechanics were researched using wiki.gg pages or indexed excerpts where direct access was blocked. The HTML item indexes remain editable separately from baked-in text.
 
-Generated assets live in `assets/tier-guides/<survivor>.png`; matching indexes live in `src/data/tier-guides/<survivor>.json`. The site discovers both automatically. Source survivor images remain unchanged.
+Generated assets live in `assets/tier-guides/<survivor>.png`; matching indexes live in `src/data/tier-guides/<survivor>.json`. The site discovers both automatically. Source survivor images remain unchanged except for the [Loader starter replacement](loader-starter.md), which replaces a duplicate of its preserved tier guide.
 
 - [acrid](acrid.md)
 - [artificer](artificer.md)
