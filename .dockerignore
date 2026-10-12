@@ -1,0 +1,15 @@
+# Only include the files required to build and serve the site.
+*
+!package.json
+!package-lock.json
+!index.html
+!tsconfig.json
+!vite.config.ts
+!src/
+!src/**
+!assets/
+!assets/**
+!docker/
+!docker/nginx.conf
+!Dockerfile
+!.dockerignore

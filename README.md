@@ -18,6 +18,26 @@ npm run build
 npm run preview
 ```
 
+## Run with Docker
+
+With Docker running in Linux container mode, build and start the production site:
+
+```sh
+docker build -t ror2-build-atlas .
+docker run --rm -p 8080:80 --name ror2-build-atlas ror2-build-atlas
+```
+
+Open <http://localhost:8080/ror2-build-atlas/>. Opening <http://localhost:8080/>
+redirects to that path. Stop the container with Ctrl+C, or run
+`docker stop ror2-build-atlas` from another terminal.
+
+The multi-stage Dockerfile runs `npm ci` and `npm run build` with Node 24, then
+serves only the generated static files with Nginx on port 80. Node.js is not
+required on the host. The image preserves the GitHub Pages base path configured
+in `vite.config.ts`; survivor and portal links continue to use hash routing.
+The `.dockerignore` file limits the build context to the required source,
+artwork, and configuration, excluding local dependencies and generated output.
+
 ## Project structure
 
 ```text
