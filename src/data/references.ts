@@ -1,6 +1,6 @@
 export const wiki = (page: string) =>
   `https://riskofrain2.wiki.gg/wiki/${encodeURIComponent(page.replaceAll(' ', '_'))}`;
-export const uncertainItems = new Set(['Searsteed', 'Collector’s Compulsion']);
+export const uncertainItems = new Set(['Searsteed']);
 export const itemWiki = (name: string) =>
   uncertainItems.has(name)
     ? `https://riskofrain2.wiki.gg/wiki/Special:Search?search=${encodeURIComponent(name)}`

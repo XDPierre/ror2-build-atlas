@@ -47,7 +47,10 @@ export default function HomePage() {
               <strong>04</strong> expansions
             </span>
             <span>
-              <strong>{String(survivors.filter((survivor) => survivor.tierImage).length).padStart(2, '0')}</strong> tier editions
+              <strong>
+                {String(survivors.filter((survivor) => survivor.tierImage).length).padStart(2, '0')}
+              </strong>{' '}
+              tier editions
             </span>
           </div>
         </div>

@@ -1,0 +1,12 @@
+{
+  "Optimal": ["Ignition Tank", "Gasoline", "Focus Crystal", "Backup Magazine", "Paul's Goat Hoof"],
+  "Best": ["Hopoo Feather", "Soldier's Syringe", "Tougher Times", "Ukulele", "AtG Missile Mk. 1"],
+  "Okay": [
+    "Crowbar",
+    "Lens-Maker's Glasses",
+    "Monster Tooth",
+    "Armor-Piercing Rounds",
+    "Bandolier"
+  ],
+  "Not Good": ["Bustling Fungus", "Squid Polyp", "Warbanner", "Bison Steak", "Leeching Seed"]
+}

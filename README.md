@@ -1,6 +1,6 @@
 # ROR2 Build Atlas
 
-An unofficial, responsive Risk of Rain 2 infographic collection built with Vite, React, and TypeScript. Includes all 20 supplied survivor guides, DLC and playstyle filters, survivor/item search, shareable detail views, full-resolution zoom, three tier indexes, wiki links, and partial portal references. No backend or paid service is required.
+An unofficial, responsive Risk of Rain 2 infographic collection built with Vite, React, and TypeScript. Includes all 20 supplied survivor guides, DLC and playstyle filters, survivor/item search, shareable detail views, full-resolution zoom, tier indexes for every supplied survivor, wiki links, and partial portal references. No backend or paid service is required.
 
 ## Preview locally
 
@@ -30,7 +30,7 @@ Nothing has been committed, pushed, or deployed by Codex. Review before publishi
 
 Full instructions: [GitHub custom Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
-The site URL is https://YOUR_USERNAME.github.io/ror2-build-atlas/. For the account mentioned in the brief it would be https://xdpierre.github.io/ror2-build-atlas/; account ownership is not assumed. If the repository name changes, update base in vite.config.ts. For a root/user site use base: '/'. Hash routes such as #survivor/railgunner need no server rewrites. Vite imports produce subpath-safe hashed asset URLs.
+The site URL is https://XDPierre.github.io/ror2-build-atlas/; account ownership is not assumed. If the repository name changes, update base in vite.config.ts. For a root/user site use base: '/'. Hash routes such as #survivor/railgunner need no server rewrites. Vite imports produce subpath-safe hashed asset URLs.
 
 ## Project structure
 
@@ -53,11 +53,13 @@ ror2-build-atlas/
 │   │   └── ExternalLink.tsx Accessible links that open in a new tab
 │   ├── data/
 │   │   ├── assets.ts        Vite image imports and map discovery
-│   │   ├── survivors.ts     Survivor metadata, DLC grouping, and tier indexes
+│   │   ├── survivors.ts     Survivor metadata, DLC grouping, and supplied tier indexes
+│   │   ├── tier-guides/     Generated tier indexes, one JSON per survivor
 │   │   ├── portals.ts       Portal route metadata
 │   │   └── references.ts    Wiki URLs, uncertain names, and mechanics corrections
 │   └── styles/
 │       └── global.css      Shared design and responsive layouts
+├── docs/image-prompts/     Exact generation prompts, wiki sources, and QA notes
 ├── index.html              HTML entry point
 ├── vite.config.ts          GitHub Pages base path
 ├── tsconfig.json           TypeScript checks
@@ -94,9 +96,17 @@ ESLint uses the [recommended typescript-eslint configuration](https://typescript
 
 Acolyte is a coming-soon block separate from the 20 supplied cards. Playstyle tags describe the supplied build proposal. DLC filters describe survivor ownership, not the DLC requirements of recommended items. Google Fonts are optional with local fallbacks. No analytics or login is included.
 
+## Generated tier-guide collection
+
+The 17 survivors missing tier-guide images were assigned to separate agents, with up to three agents working concurrently. The original Captain, Loader, and Railgunner guides are preserved. Every supplied survivor now has a matching PNG in `assets/tier-guides/`, shown separately from its original survivor infographic.
+
+New images were made with the built-in `image_gen` tool, using the corresponding survivor image as subject reference and the Captain guide as a layout reference. Each includes four rows (Optimal, Best, Okay, Not Good), a specific build/loadout scope, and an AI-generated/proposed-rankings disclaimer. Mechanics and names were researched; tier placement and generated iconography remain unverified editorial proposals. “Not Good” means lower priority for that particular build.
+
+Each new guide has editable arrays in `src/data/tier-guides/<id>.json`. The site loads these automatically; the original three indexes stay in `src/data/survivors.ts`. [Generation records](docs/image-prompts/README.md) preserve every exact prompt, input roles, wiki sources, method, visual review, and limitations. Targeted image edits corrected the Engineer Purity icon and Heretic Armor Plate wording.
+
 ## Accuracy and sources
 
-Supplied artwork is AI-generated, not official item sprites or verified tier lists. The item indexes are transcriptions rather than endorsements. Some item names, icons, and recommendations may be inaccurate. Ambiguous names such as Searsteed and Collector’s Compulsion remain unverified, and are visibly flagged with wiki-search links. The image text is preserved; corrections appear separately.
+Supplied artwork is AI-generated, not official item sprites or verified tier lists. The item indexes are transcriptions rather than endorsements. Some item names, icons, and recommendations may be inaccurate. The original Searsteed label remains unverified. Collector’s Compulsion was confirmed during Drifter research; its item-name warning has been removed. The image text is preserved; corrections appear separately.
 
 Wiki search excerpts were reviewed October 11, 2026; direct wiki page retrieval returned HTTP 403. This limited mechanics review does not certify all item recommendations or rankings.
 
@@ -115,8 +125,8 @@ Portal references:
 
 Other map arrows remain unverified. The HTML routes are a partial reference and omit newer expansion routes. Expansion grouping sources: [Alloyed Collective update](https://riskofrain2.wiki.gg/wiki/Alloyed_Collective_Update), [Hallowed Concepts](https://riskofrain2.wiki.gg/wiki/Hallowed_Concepts).
 
-Risk of Rain 2 belongs to its respective owners. This fan project is not affiliated with or endorsed by Hopoo Games, Gearbox, or 2K. Supplied image provenance is in README_FOR_CODEX.md.
+Risk of Rain 2 belongs to its respective owners. This fan project is not affiliated with or endorsed by Hopoo Games, Gearbox, or 2K.
 
 ## Validation
 
-Production TypeScript/Vite build passed. DOM interaction checks passed for all 20 detail routes, DLC and playstyle filters, item search, empty/reset state, three tier indexes, dialog zoom/close, portal references, and unknown-route fallback. HTTP checks passed for the production HTML, JavaScript, and CSS under the Pages subpath. Dependency audit reported zero vulnerabilities. No browser surface was available in the build session, so rendered desktop/mobile layout, native dialog Escape behavior, and real touch interaction still need a browser smoke test before publication. Temporary tools and QA files are ignored.
+Production TypeScript/Vite build passed. DOM interaction checks passed for all 20 detail routes, DLC and playstyle filters, item search, empty/reset state, all tier indexes, dialog zoom/close, portal references, and unknown-route fallback. HTTP checks passed for the production HTML, JavaScript, and CSS under the Pages subpath. Dependency audit reported zero vulnerabilities. No browser surface was available in the build session, so rendered desktop/mobile layout, native dialog Escape behavior, and real touch interaction still need a browser smoke test before publication. Temporary tools and QA files are ignored.
